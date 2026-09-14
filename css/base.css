@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Reset & fundamentos
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+a { color: inherit; text-decoration: none; }
+
+button { font-family: inherit; cursor: pointer; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (max-width: 640px) {
+  .container { padding-inline: 20px; }
+}
+
+.eyebrow {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: hsl(var(--primary));
+}
+
+.section {
+  padding-block: clamp(64px, 9vw, 128px);
+}
+
+.section-head {
+  max-width: 640px;
+  margin-bottom: clamp(36px, 5vw, 64px);
+}
+
+.section-head.center {
+  max-width: 680px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-head h2 {
+  font-size: clamp(28px, 3.6vw, 42px);
+  margin-top: 14px;
+}
+
+.section-head p {
+  font-size: 17px;
+  color: hsl(var(--muted-foreground));
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+/* ---------- Botões ---------- */
+.btn {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: calc(var(--radius) * 0.85);
+  padding: 13px 24px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease, border-color .15s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: hsl(var(--cta));
+  color: hsl(var(--cta-foreground));
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:hover { background: hsl(var(--brand-hover)); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+
+.btn-ghost {
+  background: transparent;
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--border));
+}
+.btn-ghost:hover { border-color: hsl(var(--primary)); color: hsl(var(--primary)); }
+
+.btn-outline-invert {
+  background: transparent;
+  color: hsl(0 0% 100%);
+  border-color: hsl(0 0% 100% / 0.3);
+}
+.btn-outline-invert:hover { border-color: hsl(0 0% 100% / 0.7); background: hsl(0 0% 100% / 0.06); }
+
+.btn-lg { padding: 16px 30px; font-size: 16px; }
+.btn-sm { padding: 9px 16px; font-size: 13.5px; }
+
+.btn-link {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(var(--primary-emphasis));
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-link .arrow { transition: transform 0.15s ease; }
+.btn-link:hover .arrow { transform: translateX(3px); }
+
+/* ---------- Cartões / superfícies ---------- */
+.card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.badge {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.badge-positive { background: hsl(var(--success) / 0.12); color: hsl(var(--success)); }
+.badge-negative { background: hsl(var(--destructive) / 0.1); color: hsl(var(--destructive)); }
+.badge-muted { background: hsl(var(--muted)); color: hsl(var(--muted-foreground)); }
+.badge-info { background: hsl(var(--info) / 0.12); color: hsl(var(--info)); }
+
+/* ---------- Scroll reveal ---------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

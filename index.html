@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Minhas Finanças — Sua vida financeira, organizada em um só lugar | AUVP</title>
+<meta name="description" content="O Minhas Finanças reúne suas contas, cartões e investimentos em um só painel. Conecte via Open Finance ou cadastre manualmente, entenda para onde vai seu dinheiro e acompanhe suas metas." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%229%22 fill=%22%23023620%22/><path d=%22M9 20l4-6 4 4 6-9%22 stroke=%22white%22 stroke-width=%222.4%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@500;600;700;800&family=Roboto:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/mockups.css">
+<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="#top" class="logo">
+      <span class="mark">MF</span>
+      Minhas Finanças
+    </a>
+
+    <nav class="nav-links">
+      <a href="#historia">Como funciona</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#tour">Dentro do produto</a>
+      <a href="#depoimentos">Depoimentos</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#login" class="btn btn-ghost btn-sm">Entrar</a>
+      <a href="#comecar" class="btn btn-primary btn-sm">Criar conta grátis</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero container">
+    <div class="hero-top">
+      <div class="hero-copy" data-reveal>
+        <span class="eyebrow">Uma ferramenta AUVP</span>
+        <h1>Sua vida financeira, <em>inteira</em>, em um só lugar.</h1>
+        <p class="sub">O Minhas Finanças conecta suas contas, cartões e investimentos automaticamente — ou você cadastra na mão. Sem planilha, sem abrir cinco apps pra saber quanto sobrou.</p>
+        <div class="hero-ctas">
+          <a href="#comecar" class="btn btn-primary btn-lg">
+            Criar conta grátis
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#login" class="btn btn-ghost btn-lg">Já tenho conta — entrar</a>
+        </div>
+        <div class="hero-trust">
+          <span class="item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Open Finance regulado pelo Banco Central</span>
+          <span class="item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dados criptografados de ponta a ponta</span>
+          <span class="item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Sem cartão de crédito para começar</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="frame hero-dash-frame">
+          <div class="frame-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="frame-title">app.minhasfinancas.auvp.com.br</span>
+          </div>
+          <div class="frame-body tight">
+            <div class="app-shell">
+              <div class="app-nav">
+                <div class="app-logo"><span class="mark">MF</span> Minhas Finanças</div>
+                <div class="app-nav-item active">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+                  Visão geral
+                </div>
+                <div class="app-nav-item">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="14" y2="18"/></svg>
+                  Transações
+                </div>
+                <div class="app-nav-item">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>
+                  Metas
+                </div>
+                <div class="app-nav-item">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l4-7 4 4 4-9 6 12"/></svg>
+                  Relatórios
+                </div>
+              </div>
+              <div class="app-main">
+                <div class="app-main-head">
+                  <div>
+                    <h4>Boa tarde, Marina 👋</h4>
+                    <div class="sub">Saldo consolidado de 6 contas conectadas</div>
+                  </div>
+                  <span class="badge badge-positive">+ 8,2% no mês</span>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-card">
+                    <div class="label">Saldo total</div>
+                    <div class="value">R$ 18.420</div>
+                    <div class="delta up">↑ R$ 1.240 este mês</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="label">Receitas</div>
+                    <div class="value">R$ 9.800</div>
+                    <div class="delta up">↑ 4%</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="label">Despesas</div>
+                    <div class="value">R$ 6.310</div>
+                    <div class="delta down">↓ 6%</div>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-title">Evolução do patrimônio <span class="more">6 meses</span></div>
+                  <div class="bars">
+                    <div class="bar" style="height:38%"></div>
+                    <div class="bar" style="height:52%"></div>
+                    <div class="bar" style="height:46%"></div>
+                    <div class="bar" style="height:64%"></div>
+                    <div class="bar" style="height:58%"></div>
+                    <div class="bar peak" style="height:82%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-card goal">
+          <div class="goal-head"><span class="name">Reserva de emergência</span><span class="pct">72%</span></div>
+          <div class="goal-bar-track"><div class="goal-bar-fill" style="width:72%"></div></div>
+        </div>
+        <div class="float-card alert">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <div class="tx-icon" style="width:26px;height:26px;">🛒</div>
+            <div>
+              <div style="font-family:var(--font-ui);font-size:12px;font-weight:600;">Categorizado</div>
+              <div style="font-size:10.5px;color:hsl(var(--muted-foreground));">Mercado → automático</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORYTELLING ============ -->
+  <section class="section story-section container" id="historia">
+    <div class="story-intro" data-reveal>
+      <span class="eyebrow">Como a bagunça vira clareza</span>
+      <h2 style="font-size:clamp(26px,3.2vw,36px);margin-top:14px;">Sua vida financeira já existe. Ela só está espalhada.</h2>
+      <p style="font-size:16px;color:hsl(var(--muted-foreground));margin-top:14px;">O Minhas Finanças não cria dados novos — ele organiza os que você já tem, em cinco passos.</p>
+    </div>
+
+    <!-- Passo 1 — Espalhado -->
+    <div class="story-step" data-reveal>
+      <div class="story-copy">
+        <div class="story-index"><span class="line"></span>01 — Espalhado</div>
+        <h3>Hoje, seu dinheiro mora em cinco lugares diferentes.</h3>
+        <p>Conta corrente em um banco, cartão em outro, investimentos numa corretora, um vale-refeição, uma poupança esquecida. Cada um com seu próprio app, seu próprio número.</p>
+      </div>
+      <div class="story-visual">
+        <div class="scatter">
+          <div class="scatter-card" style="top:6%; left:4%; transform: rotate(-6deg);">
+            <div class="app"><span class="sq" style="background:hsl(var(--chart-4))"></span> Banco A · Corrente</div>
+            <div class="num">R$ 3.240</div>
+            <div class="lbl">Atualizado às 09:12</div>
+          </div>
+          <div class="scatter-card" style="top:2%; right:2%; transform: rotate(5deg);">
+            <div class="app"><span class="sq" style="background:hsl(var(--chart-2))"></span> Cartão de crédito</div>
+            <div class="num">R$ -1.870</div>
+            <div class="lbl">Fatura em aberto</div>
+          </div>
+          <div class="scatter-card" style="top:38%; left:22%; transform: rotate(3deg);">
+            <div class="app"><span class="sq" style="background:hsl(var(--chart-3))"></span> Corretora</div>
+            <div class="num">R$ 12.560</div>
+            <div class="lbl">CDB + Tesouro</div>
+          </div>
+          <div class="scatter-card" style="top:34%; right:10%; transform: rotate(-4deg);">
+            <div class="app"><span class="sq" style="background:hsl(var(--chart-1))"></span> Banco B · Poupança</div>
+            <div class="num">R$ 890</div>
+            <div class="lbl">Rendimento parado</div>
+          </div>
+          <div class="scatter-card" style="bottom:4%; left:12%; transform: rotate(-2deg);">
+            <div class="app"><span class="sq" style="background:hsl(var(--chart-6))"></span> Vale-refeição</div>
+            <div class="num">R$ 412</div>
+            <div class="lbl">Saldo do mês</div>
+          </div>
+          <div class="scatter-card" style="bottom:0%; right:16%; transform: rotate(4deg);">
+            <div class="app"><span class="sq" style="background:hsl(var(--chart-8))"></span> Planilha manual</div>
+            <div class="num">?</div>
+            <div class="lbl">Desatualizada há 3 semanas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 2 — Centralizado -->
+    <div class="story-step reverse" data-reveal>
+      <div class="story-copy">
+        <div class="story-index"><span class="line"></span>02 — Centralizado</div>
+        <h3>Tudo isso vira um único painel.</h3>
+        <p>Você conecta suas instituições por Open Finance — ou cadastra manualmente o que preferir não conectar. Em minutos, um número só: o que você realmente tem.</p>
+      </div>
+      <div class="story-visual">
+        <div class="frame">
+          <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Visão geral</span></div>
+          <div class="frame-body">
+            <div class="panel-title">Contas conectadas <span class="more">+ Adicionar</span></div>
+            <div class="account-row">
+              <div class="logo" style="background:hsl(var(--chart-4))">BA</div>
+              <div class="info"><div class="name">Banco A · Corrente</div><div class="meta">Conectado via Open Finance</div></div>
+              <div class="val">R$ 3.240</div>
+            </div>
+            <div class="account-row">
+              <div class="logo" style="background:hsl(var(--chart-2))">CC</div>
+              <div class="info"><div class="name">Cartão de crédito</div><div class="meta">Fatura de out. em aberto</div></div>
+              <div class="val">R$ -1.870</div>
+            </div>
+            <div class="account-row">
+              <div class="logo" style="background:hsl(var(--chart-3))">CO</div>
+              <div class="info"><div class="name">Corretora</div><div class="meta">CDB + Tesouro Direto</div></div>
+              <div class="val">R$ 12.560</div>
+            </div>
+            <div class="account-row">
+              <div class="logo" style="background:hsl(var(--chart-1))">BB</div>
+              <div class="info"><div class="name">Banco B · Poupança</div><div class="meta">Cadastro manual</div></div>
+              <div class="val">R$ 890</div>
+            </div>
+            <div style="margin-top:14px;padding-top:14px;border-top:1px solid hsl(var(--border));display:flex;justify-content:space-between;align-items:center;">
+              <span style="font-family:var(--font-ui);font-weight:600;font-size:13px;">Patrimônio total</span>
+              <span style="font-family:var(--font-display);font-weight:700;font-size:19px;color:hsl(var(--primary));">R$ 18.420</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 3 — Entendimento -->
+    <div class="story-step" data-reveal>
+      <div class="story-copy">
+        <div class="story-index"><span class="line"></span>03 — Entendimento</div>
+        <h3>Cada transação ganha um porquê.</h3>
+        <p>A categorização automática já separa mercado, transporte, assinaturas e lazer. Você entende para onde o dinheiro vai — sem abrir a fatura em PDF.</p>
+      </div>
+      <div class="story-visual">
+        <div class="frame">
+          <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Para onde foi seu dinheiro</span></div>
+          <div class="frame-body">
+            <div class="donut-wrap">
+              <div class="donut" style="background: conic-gradient(hsl(var(--chart-1)) 0% 34%, hsl(var(--chart-3)) 34% 55%, hsl(var(--chart-4)) 55% 72%, hsl(var(--chart-2)) 72% 86%, hsl(var(--chart-8)) 86% 100%);"></div>
+              <div class="donut-legend">
+                <div class="item"><span class="swatch" style="background:hsl(var(--chart-1))"></span>Moradia<span class="amt">R$ 2.140</span></div>
+                <div class="item"><span class="swatch" style="background:hsl(var(--chart-3))"></span>Mercado<span class="amt">R$ 1.320</span></div>
+                <div class="item"><span class="swatch" style="background:hsl(var(--chart-4))"></span>Transporte<span class="amt">R$ 680</span></div>
+                <div class="item"><span class="swatch" style="background:hsl(var(--chart-2))"></span>Assinaturas<span class="amt">R$ 440</span></div>
+                <div class="item"><span class="swatch" style="background:hsl(var(--chart-8))"></span>Outros<span class="amt">R$ 380</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 4 — Organização -->
+    <div class="story-step reverse" data-reveal>
+      <div class="story-copy">
+        <div class="story-index"><span class="line"></span>04 — Organização</div>
+        <h3>A bagunça vira uma lista que faz sentido.</h3>
+        <p>Todas as movimentações, de todas as contas, na mesma lista — organizadas, pesquisáveis e prontas para você ajustar uma categoria com um toque.</p>
+      </div>
+      <div class="story-visual">
+        <div class="frame">
+          <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Transações · outubro</span></div>
+          <div class="frame-body">
+            <div class="tx-list">
+              <div class="tx-row">
+                <div class="tx-icon">🛒</div>
+                <div class="tx-main"><div class="name">Supermercado Bom Preço</div><div class="cat">Mercado</div></div>
+                <span class="tx-chip badge-muted">Automático</span>
+                <div class="tx-amt neg">-R$ 284,90</div>
+              </div>
+              <div class="tx-row">
+                <div class="tx-icon">🏠</div>
+                <div class="tx-main"><div class="name">Aluguel</div><div class="cat">Moradia</div></div>
+                <span class="tx-chip badge-muted">Recorrente</span>
+                <div class="tx-amt neg">-R$ 1.850,00</div>
+              </div>
+              <div class="tx-row">
+                <div class="tx-icon">💼</div>
+                <div class="tx-main"><div class="name">Salário</div><div class="cat">Receita</div></div>
+                <span class="tx-chip badge-positive">Receita</span>
+                <div class="tx-amt pos">+R$ 6.200,00</div>
+              </div>
+              <div class="tx-row">
+                <div class="tx-icon">🎬</div>
+                <div class="tx-main"><div class="name">Streaming de vídeo</div><div class="cat">Assinaturas</div></div>
+                <span class="tx-chip badge-info">Revisar</span>
+                <div class="tx-amt neg">-R$ 39,90</div>
+              </div>
+              <div class="tx-row">
+                <div class="tx-icon">🚕</div>
+                <div class="tx-main"><div class="name">App de transporte</div><div class="cat">Transporte</div></div>
+                <span class="tx-chip badge-muted">Automático</span>
+                <div class="tx-amt neg">-R$ 27,50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 5 — Metas -->
+    <div class="story-step" data-reveal>
+      <div class="story-copy">
+        <div class="story-index"><span class="line"></span>05 — Acompanhamento</div>
+        <h3>E aí, o dinheiro passa a ter destino.</h3>
+        <p>Com a visão clara do que entra e sai, dá pra colocar metas de verdade — reserva de emergência, viagem, entrada do apartamento — e ver o progresso em tempo real.</p>
+      </div>
+      <div class="story-visual">
+        <div class="frame">
+          <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas</span></div>
+          <div class="frame-body">
+            <div class="goal-card">
+              <div class="goal-head"><span class="name">🛟 Reserva de emergência</span><span class="pct">72%</span></div>
+              <div class="goal-bar-track"><div class="goal-bar-fill" style="width:72%"></div></div>
+              <div class="goal-foot"><span>R$ 14.400 de R$ 20.000</span><span>Meta: mar/2027</span></div>
+            </div>
+            <div class="goal-card">
+              <div class="goal-head"><span class="name">✈️ Viagem em família</span><span class="pct">41%</span></div>
+              <div class="goal-bar-track"><div class="goal-bar-fill" style="width:41%"></div></div>
+              <div class="goal-foot"><span>R$ 2.460 de R$ 6.000</span><span>Meta: jul/2027</span></div>
+            </div>
+            <div class="goal-card">
+              <div class="goal-head"><span class="name">🏠 Entrada do apartamento</span><span class="pct">18%</span></div>
+              <div class="goal-bar-track"><div class="goal-bar-fill" style="width:18%"></div></div>
+              <div class="goal-foot"><span>R$ 18.000 de R$ 100.000</span><span>Meta: 2029</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section container" id="recursos">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Recursos</span>
+      <h2>Tudo o que a organização financeira precisa — e nada que ela não precisa.</h2>
+      <p>Sem planilha, sem app trocado por outro. O que muda de verdade no seu dia a dia.</p>
+    </div>
+    <div class="features-grid" data-reveal>
+      <div class="feature-card">
+        <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+        <h4>Open Finance automático</h4>
+        <p>Conecte bancos, cartões e corretoras em poucos cliques. Seus saldos e transações chegam sozinhos, todos os dias.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L11 3.83A2 2 0 0 0 9.59 3.24L4 3a1 1 0 0 0-1 1l.24 5.59a2 2 0 0 0 .59 1.41l9.58 9.59a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.83Z"/><circle cx="8.5" cy="8.5" r="0.5" fill="currentColor"/></svg></div>
+        <h4>Categorização inteligente</h4>
+        <p>Cada compra é organizada automaticamente por categoria. Discordou? Ajusta uma vez e o app aprende.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></div>
+        <h4>Metas com progresso real</h4>
+        <p>Defina um valor e um prazo. O painel mostra exatamente quanto falta e se o ritmo atual é suficiente.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+        <h4>Cadastro manual flexível</h4>
+        <p>Conta que não conecta, dinheiro em espécie, empréstimo entre amigos — registre do seu jeito, sem perder a visão do todo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
+        <h4>Receitas x despesas, claras</h4>
+        <p>Compare entradas e saídas mês a mês e veja se está sobrando ou faltando — sem precisar somar nada na cabeça.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
+        <h4>Privacidade por padrão</h4>
+        <p>Conexão via Open Finance regulado pelo Banco Central e dados criptografados. Você decide o que conectar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT TOUR ============ -->
+  <section class="section container" id="tour" style="background:hsl(var(--muted)/0.35); border-radius:32px;">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Por dentro do produto</span>
+      <h2>Cada tela pensada para um momento da sua rotina financeira.</h2>
+    </div>
+
+    <div class="tour" data-reveal>
+      <div class="tour-tabs">
+        <button class="tour-tab active" data-tab="conectar">
+          <span class="t1"><span class="dot"></span> Conectar contas</span>
+          <span class="t2">Fluxo guiado de Open Finance, passo a passo, com status em tempo real.</span>
+        </button>
+        <button class="tour-tab" data-tab="manual">
+          <span class="t1"><span class="dot"></span> Cadastro manual</span>
+          <span class="t2">Para o que não dá — ou não precisa — conectar automaticamente.</span>
+        </button>
+        <button class="tour-tab" data-tab="categorizacao">
+          <span class="t1"><span class="dot"></span> Categorização</span>
+          <span class="t2">Reclassifique uma transação e veja o impacto na hora.</span>
+        </button>
+        <button class="tour-tab" data-tab="receitasdespesas">
+          <span class="t1"><span class="dot"></span> Receitas x despesas</span>
+          <span class="t2">O comparativo que mostra se o mês fechou no azul.</span>
+        </button>
+        <button class="tour-tab" data-tab="metas">
+          <span class="t1"><span class="dot"></span> Metas e evolução</span>
+          <span class="t2">Projeção de quando cada meta será alcançada no ritmo atual.</span>
+        </button>
+        <button class="tour-tab" data-tab="vazio">
+          <span class="t1"><span class="dot"></span> Primeiros passos</span>
+          <span class="t2">Estados vazios que já orientam o que fazer, sem tela em branco.</span>
+        </button>
+      </div>
+
+      <div class="tour-panels">
+        <!-- Conectar contas -->
+        <div class="tour-panel active" data-panel="conectar">
+          <div class="frame">
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Conectar instituição · Open Finance</span></div>
+            <div class="frame-body">
+              <div class="connect-step done">
+                <div class="num">✓</div>
+                <div class="txt"><div class="t1">Escolha sua instituição</div><div class="t2">Banco A selecionado</div></div>
+                <span class="badge badge-positive">Concluído</span>
+              </div>
+              <div class="connect-step done">
+                <div class="num">✓</div>
+                <div class="txt"><div class="t1">Autorize o compartilhamento</div><div class="t2">Login feito direto no site do seu banco</div></div>
+                <span class="badge badge-positive">Concluído</span>
+              </div>
+              <div class="connect-step">
+                <div class="num">3</div>
+                <div class="txt"><div class="t1">Sincronizando dados</div><div class="t2">Importando os últimos 90 dias de movimentações</div></div>
+                <span class="badge badge-info">Em andamento</span>
+              </div>
+              <div class="connect-step" style="opacity:.5">
+                <div class="num">4</div>
+                <div class="txt"><div class="t1">Pronto</div><div class="t2">Sua conta aparece no painel automaticamente</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cadastro manual -->
+        <div class="tour-panel" data-panel="manual">
+          <div class="frame">
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Nova movimentação manual</span></div>
+            <div class="frame-body">
+              <div class="form-row">
+                <div class="form-field"><label>Descrição</label><div class="form-input">Almoço com a equipe</div></div>
+                <div class="form-field"><label>Valor</label><div class="form-input">R$ 68,00</div></div>
+              </div>
+              <div class="form-field">
+                <label>Categoria</label>
+                <div class="chip-select">
+                  <span class="chip">Moradia</span>
+                  <span class="chip selected">Alimentação</span>
+                  <span class="chip">Transporte</span>
+                  <span class="chip">Lazer</span>
+                  <span class="chip">+ Nova</span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field"><label>Conta</label><div class="form-input">Carteira · Dinheiro</div></div>
+                <div class="form-field"><label>Data</label><div class="form-input">14 de setembro</div></div>
+              </div>
+              <a href="#comecar" class="btn btn-primary" style="width:100%;margin-top:4px;">Salvar movimentação</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categorização -->
+        <div class="tour-panel" data-panel="categorizacao">
+          <div class="frame">
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Ajustar categoria</span></div>
+            <div class="frame-body">
+              <div class="tx-row" style="border:1px solid hsl(var(--border));border-radius:10px;padding:12px;margin-bottom:16px;">
+                <div class="tx-icon">🛍️</div>
+                <div class="tx-main"><div class="name">Loja de departamentos</div><div class="cat">Categorizado como "Compras"</div></div>
+                <span class="tx-chip badge-info">Sugerido pela IA</span>
+                <div class="tx-amt neg">-R$ 156,00</div>
+              </div>
+              <div class="form-field">
+                <label>Reclassificar para</label>
+                <div class="chip-select">
+                  <span class="chip selected">Vestuário</span>
+                  <span class="chip">Casa</span>
+                  <span class="chip">Presentes</span>
+                  <span class="chip">Eletrônicos</span>
+                </div>
+              </div>
+              <p style="font-size:12.5px;color:hsl(var(--muted-foreground));margin-top:14px;">A próxima compra nessa loja já entra como "Vestuário" automaticamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Receitas x despesas -->
+        <div class="tour-panel" data-panel="receitasdespesas">
+          <div class="frame">
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Receitas x despesas · últimos 6 meses</span></div>
+            <div class="frame-body">
+              <div class="panel-title">Balanço mensal</div>
+              <div class="bars" style="height:120px;margin-bottom:14px;">
+                <div class="bar" style="height:60%"></div>
+                <div class="bar muted" style="height:38%"></div>
+                <div class="bar" style="height:74%"></div>
+                <div class="bar muted" style="height:44%"></div>
+                <div class="bar" style="height:66%"></div>
+                <div class="bar peak" style="height:90%"></div>
+              </div>
+              <div style="display:flex;gap:20px;font-family:var(--font-ui);font-size:12.5px;">
+                <span style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:3px;background:hsl(var(--chart-1));display:inline-block;"></span> Receitas</span>
+                <span style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:3px;background:hsl(var(--muted-foreground));display:inline-block;"></span> Despesas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metas -->
+        <div class="tour-panel" data-panel="metas">
+          <div class="frame">
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Reserva de emergência · evolução</span></div>
+            <div class="frame-body">
+              <div class="goal-head" style="margin-bottom:16px;"><span class="name">No ritmo atual, meta batida em <strong>4 meses</strong></span><span class="pct">72%</span></div>
+              <div class="bars" style="height:90px;margin-bottom:8px;">
+                <div class="bar muted" style="height:20%"></div>
+                <div class="bar muted" style="height:34%"></div>
+                <div class="bar muted" style="height:48%"></div>
+                <div class="bar" style="height:58%"></div>
+                <div class="bar" style="height:65%"></div>
+                <div class="bar peak" style="height:72%"></div>
+              </div>
+              <div class="goal-foot"><span>R$ 14.400 acumulados</span><span>Meta: R$ 20.000</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estado vazio -->
+        <div class="tour-panel" data-panel="vazio">
+          <div class="frame">
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas · nenhuma criada ainda</span></div>
+            <div class="frame-body">
+              <div class="empty-state">
+                <div class="glyph"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></div>
+                <h5>Você ainda não tem metas</h5>
+                <p>Que tal começar por uma reserva de emergência? Leva menos de um minuto para configurar.</p>
+                <a href="#comecar" class="btn btn-primary btn-sm" style="margin-top:16px;">Criar minha primeira meta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROVA SOCIAL ============ -->
+  <section class="section container" id="depoimentos">
+    <div class="proof-stats" data-reveal>
+      <div class="proof-stat"><div class="num">+40 mil</div><div class="lbl">contas conectadas</div></div>
+      <div class="proof-stat"><div class="num">R$ 210 mi</div><div class="lbl">organizados na plataforma</div></div>
+      <div class="proof-stat"><div class="num">4,8/5</div><div class="lbl">avaliação nas lojas de apps</div></div>
+      <div class="proof-stat"><div class="num">3 min</div><div class="lbl">tempo médio até o primeiro painel completo</div></div>
+    </div>
+
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Quem já organizou</span>
+      <h2>De "não sei onde meu dinheiro vai" para "eu vejo tudo".</h2>
+    </div>
+
+    <div class="quotes-grid" data-reveal>
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p>"Eu tinha três apps de banco abertos toda hora. Hoje é um só. Descobri que gastava R$ 400 por mês em assinaturas que nem lembrava."</p>
+        <div class="who"><div class="avatar">CT</div><div><div class="name">Camila T.</div><div class="role">Usa há 8 meses</div></div></div>
+      </div>
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p>"Cadastrei minhas contas manuais também, e não só as que conectam. Pela primeira vez meu patrimônio total está certo em um lugar só."</p>
+        <div class="who"><div class="avatar">RA</div><div><div class="name">Rodrigo A.</div><div class="role">Autônomo</div></div></div>
+      </div>
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p>"A meta de entrada do apartamento parecia impossível até eu ver o progresso mês a mês. Isso mudou o jeito que eu poupo."</p>
+        <div class="who"><div class="avatar">JL</div><div><div class="name">Julia L.</div><div class="role">Usa há 1 ano</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="container" style="padding-bottom:clamp(64px,9vw,128px);" id="comecar">
+    <div class="cta-final" data-reveal>
+      <h2>Pare de somar tudo na cabeça.</h2>
+      <p>Conecte suas contas ou cadastre na mão — em minutos você vê sua vida financeira inteira, num só painel.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary btn-lg">Criar conta grátis</a>
+        <a href="#login" class="btn btn-outline-invert btn-lg">Já sou cliente AUVP</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="mark">MF</span>Minhas Finanças</a>
+        <p>Uma ferramenta AUVP para organizar, entender e acompanhar toda a sua vida financeira em um só lugar.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h6>Produto</h6>
+          <ul>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#tour">Dentro do produto</a></li>
+            <li><a href="#historia">Como funciona</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>AUVP</h6>
+          <ul>
+            <li><a href="#">Sobre a AUVP</a></li>
+            <li><a href="#">Outras ferramentas</a></li>
+            <li><a href="#">Central de ajuda</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Legal</h6>
+          <ul>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Segurança e Open Finance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AUVP. Todos os direitos reservados.</span>
+      <span>Minhas Finanças é uma ferramenta do ecossistema AUVP.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
