@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Minhas Finanças — Sua vida financeira, organizada em um só lugar | AUVP</title>
+<title>Minhas Finanças: sua vida financeira organizada em um só lugar | AUVP</title>
 <meta name="description" content="O Minhas Finanças reúne suas contas, cartões e investimentos em um só painel. Conecte via Open Finance ou cadastre manualmente, entenda para onde vai seu dinheiro e acompanhe suas metas." />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%229%22 fill=%22%23023620%22/><path d=%22M9 20l4-6 4 4 6-9%22 stroke=%22white%22 stroke-width=%222.4%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@500;600;700;800&family=Roboto:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/mockups.css">
 <link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/footer-escola.css">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
 <header class="site-header">
   <div class="container">
     <a href="#top" class="logo">
-      <span class="mark">MF</span>
+      <img src="assets/olho-verde.svg" alt="" class="mark-eye" width="26" height="17">
       Minhas Finanças
     </a>
 
@@ -48,15 +49,14 @@
   <section class="hero container">
     <div class="hero-top">
       <div class="hero-copy" data-reveal>
-        <span class="eyebrow">Uma ferramenta AUVP</span>
         <h1>Sua vida financeira, <em>inteira</em>, em um só lugar.</h1>
-        <p class="sub">O Minhas Finanças conecta suas contas, cartões e investimentos automaticamente — ou você cadastra na mão. Sem planilha, sem abrir cinco apps pra saber quanto sobrou.</p>
+        <p class="sub">O Minhas Finanças conecta suas contas, cartões e investimentos automaticamente, ou você cadastra na mão. Sem planilha, sem abrir cinco apps pra saber quanto sobrou.</p>
         <div class="hero-ctas">
           <a href="#comecar" class="btn btn-primary btn-lg">
             Criar conta grátis
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="#login" class="btn btn-ghost btn-lg">Já tenho conta — entrar</a>
+          <a href="#login" class="btn btn-ghost btn-lg">Entrar na minha conta</a>
         </div>
         <div class="hero-trust">
           <span class="item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Open Finance regulado pelo Banco Central</span>
@@ -74,7 +74,7 @@
           <div class="frame-body tight">
             <div class="app-shell">
               <div class="app-nav">
-                <div class="app-logo"><span class="mark">MF</span> Minhas Finanças</div>
+                <div class="app-logo"><img src="assets/olho-branco.svg" alt="" class="mark-eye" width="24" height="15"> Minhas Finanças</div>
                 <div class="app-nav-item active">
                   <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
                   Visão geral
@@ -153,15 +153,14 @@
   <!-- ============ STORYTELLING ============ -->
   <section class="section story-section container" id="historia">
     <div class="story-intro" data-reveal>
-      <span class="eyebrow">Como a bagunça vira clareza</span>
-      <h2 style="font-size:clamp(26px,3.2vw,36px);margin-top:14px;">Sua vida financeira já existe. Ela só está espalhada.</h2>
-      <p style="font-size:16px;color:hsl(var(--muted-foreground));margin-top:14px;">O Minhas Finanças não cria dados novos — ele organiza os que você já tem, em cinco passos.</p>
+      <h2 style="font-size:clamp(26px,3.2vw,36px);">Sua vida financeira já existe. Ela só está espalhada.</h2>
+      <p style="font-size:16px;color:hsl(var(--muted-foreground));margin-top:14px;">O Minhas Finanças não cria dados novos, ele organiza os que você já tem, em cinco passos.</p>
     </div>
 
-    <!-- Passo 1 — Espalhado -->
+    <!-- Passo 1: Espalhado -->
     <div class="story-step" data-reveal>
       <div class="story-copy">
-        <div class="story-index"><span class="line"></span>01 — Espalhado</div>
+        <div class="story-index"><span class="line"></span>01 · Espalhado</div>
         <h3>Hoje, seu dinheiro mora em cinco lugares diferentes.</h3>
         <p>Conta corrente em um banco, cartão em outro, investimentos numa corretora, um vale-refeição, uma poupança esquecida. Cada um com seu próprio app, seu próprio número.</p>
       </div>
@@ -201,12 +200,12 @@
       </div>
     </div>
 
-    <!-- Passo 2 — Centralizado -->
+    <!-- Passo 2: Centralizado -->
     <div class="story-step reverse" data-reveal>
       <div class="story-copy">
-        <div class="story-index"><span class="line"></span>02 — Centralizado</div>
+        <div class="story-index"><span class="line"></span>02 · Centralizado</div>
         <h3>Tudo isso vira um único painel.</h3>
-        <p>Você conecta suas instituições por Open Finance — ou cadastra manualmente o que preferir não conectar. Em minutos, um número só: o que você realmente tem.</p>
+        <p>Você conecta suas instituições por Open Finance ou cadastra manualmente o que preferir não conectar. Em minutos, um número só: o que você realmente tem.</p>
       </div>
       <div class="story-visual">
         <div class="frame">
@@ -242,12 +241,12 @@
       </div>
     </div>
 
-    <!-- Passo 3 — Entendimento -->
+    <!-- Passo 3: Entendimento -->
     <div class="story-step" data-reveal>
       <div class="story-copy">
-        <div class="story-index"><span class="line"></span>03 — Entendimento</div>
+        <div class="story-index"><span class="line"></span>03 · Entendimento</div>
         <h3>Cada transação ganha um porquê.</h3>
-        <p>A categorização automática já separa mercado, transporte, assinaturas e lazer. Você entende para onde o dinheiro vai — sem abrir a fatura em PDF.</p>
+        <p>A categorização automática já separa mercado, transporte, assinaturas e lazer. Você entende para onde o dinheiro vai, sem abrir a fatura em PDF.</p>
       </div>
       <div class="story-visual">
         <div class="frame">
@@ -268,12 +267,12 @@
       </div>
     </div>
 
-    <!-- Passo 4 — Organização -->
+    <!-- Passo 4: Organização -->
     <div class="story-step reverse" data-reveal>
       <div class="story-copy">
-        <div class="story-index"><span class="line"></span>04 — Organização</div>
+        <div class="story-index"><span class="line"></span>04 · Organização</div>
         <h3>A bagunça vira uma lista que faz sentido.</h3>
-        <p>Todas as movimentações, de todas as contas, na mesma lista — organizadas, pesquisáveis e prontas para você ajustar uma categoria com um toque.</p>
+        <p>Todas as movimentações, de todas as contas, na mesma lista, organizadas, pesquisáveis e prontas para você ajustar uma categoria com um toque.</p>
       </div>
       <div class="story-visual">
         <div class="frame">
@@ -316,12 +315,12 @@
       </div>
     </div>
 
-    <!-- Passo 5 — Metas -->
+    <!-- Passo 5: Metas -->
     <div class="story-step" data-reveal>
       <div class="story-copy">
-        <div class="story-index"><span class="line"></span>05 — Acompanhamento</div>
+        <div class="story-index"><span class="line"></span>05 · Acompanhamento</div>
         <h3>E aí, o dinheiro passa a ter destino.</h3>
-        <p>Com a visão clara do que entra e sai, dá pra colocar metas de verdade — reserva de emergência, viagem, entrada do apartamento — e ver o progresso em tempo real.</p>
+        <p>Com a visão clara do que entra e sai, dá pra colocar metas de verdade: reserva de emergência, viagem, entrada do apartamento, e ver o progresso em tempo real.</p>
       </div>
       <div class="story-visual">
         <div class="frame">
@@ -351,8 +350,7 @@
   <!-- ============ FEATURES ============ -->
   <section class="section container" id="recursos">
     <div class="section-head center" data-reveal>
-      <span class="eyebrow">Recursos</span>
-      <h2>Tudo o que a organização financeira precisa — e nada que ela não precisa.</h2>
+      <h2>Tudo o que a organização financeira precisa, e nada que ela não precisa.</h2>
       <p>Sem planilha, sem app trocado por outro. O que muda de verdade no seu dia a dia.</p>
     </div>
     <div class="features-grid" data-reveal>
@@ -374,12 +372,12 @@
       <div class="feature-card">
         <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
         <h4>Cadastro manual flexível</h4>
-        <p>Conta que não conecta, dinheiro em espécie, empréstimo entre amigos — registre do seu jeito, sem perder a visão do todo.</p>
+        <p>Conta que não conecta, dinheiro em espécie, empréstimo entre amigos: registre do seu jeito, sem perder a visão do todo.</p>
       </div>
       <div class="feature-card">
         <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
         <h4>Receitas x despesas, claras</h4>
-        <p>Compare entradas e saídas mês a mês e veja se está sobrando ou faltando — sem precisar somar nada na cabeça.</p>
+        <p>Compare entradas e saídas mês a mês e veja se está sobrando ou faltando, sem precisar somar nada na cabeça.</p>
       </div>
       <div class="feature-card">
         <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg></div>
@@ -404,7 +402,7 @@
         </button>
         <button class="tour-tab" data-tab="manual">
           <span class="t1"><span class="dot"></span> Cadastro manual</span>
-          <span class="t2">Para o que não dá — ou não precisa — conectar automaticamente.</span>
+          <span class="t2">Para o que não dá ou não precisa conectar automaticamente.</span>
         </button>
         <button class="tour-tab" data-tab="categorizacao">
           <span class="t1"><span class="dot"></span> Categorização</span>
@@ -602,7 +600,7 @@
   <section class="container" style="padding-bottom:clamp(64px,9vw,128px);" id="comecar">
     <div class="cta-final" data-reveal>
       <h2>Pare de somar tudo na cabeça.</h2>
-      <p>Conecte suas contas ou cadastre na mão — em minutos você vê sua vida financeira inteira, num só painel.</p>
+      <p>Conecte suas contas ou cadastre na mão. Em minutos você vê sua vida financeira inteira, num só painel.</p>
       <div class="hero-ctas">
         <a href="#" class="btn btn-primary btn-lg">Criar conta grátis</a>
         <a href="#login" class="btn btn-outline-invert btn-lg">Já sou cliente AUVP</a>
@@ -612,43 +610,72 @@
 </main>
 
 <!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#top" class="logo"><span class="mark">MF</span>Minhas Finanças</a>
-        <p>Uma ferramenta AUVP para organizar, entender e acompanhar toda a sua vida financeira em um só lugar.</p>
+<!-- Réplica exata do footer de produtosauvp/lp-auvp-escola-prod -->
+<footer class="escola-footer">
+  <div class="ef-container">
+    <div class="ef-top">
+      <!-- Coluna Lado Esquerdo (33.3%): Logo e Infos Legais -->
+      <div class="ef-brand">
+        <a href="#" onclick="window.scrollTo(0,0);return false;" class="ef-logo-link">
+          <img src="https://cdn.asupernova.com.br/lp-auvp/vite/auvp-escola-horizontal-amarelo.svg" alt="AUVP Capital" loading="lazy" decoding="async" width="180" height="48">
+        </a>
+        <p class="ef-tag">Orgulhosamente feito sob o sol escaldante de Goiás ☀️</p>
+        <p class="ef-legal">DO NOT SCARE SOLUÇÕES INTERATIVAS LTDA<br>CNPJ: 38.099.091/0001-37</p>
       </div>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h6>Produto</h6>
-          <ul>
-            <li><a href="#recursos">Recursos</a></li>
-            <li><a href="#tour">Dentro do produto</a></li>
-            <li><a href="#historia">Como funciona</a></li>
-          </ul>
+
+      <!-- Coluna Lado Direito (66.6%): Grade de Links -->
+      <div class="ef-links">
+        <!-- Informações -->
+        <div class="ef-col">
+          <h4>Informações</h4>
+          <div class="ef-link-list">
+            <a href="https://www.auvpcapital.com.br/compliance" class="footer-link">Termos de uso</a>
+            <a href="https://www.auvpcapital.com.br/compliance" class="footer-link">Política de privacidade</a>
+            <a href="#termos-indicacao" id="open-referral-terms" class="footer-link">Termos do Programa de Indicação</a>
+            <a href="https://sard.ink/leadduvida" class="footer-link">Precisa de ajuda</a>
+            <a href="https://www.aulasauvp.com.br/start" class="footer-link">Área do Aluno</a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h6>AUVP</h6>
-          <ul>
-            <li><a href="#">Sobre a AUVP</a></li>
-            <li><a href="#">Outras ferramentas</a></li>
-            <li><a href="#">Central de ajuda</a></li>
-          </ul>
+
+        <!-- Nossos canais -->
+        <div class="ef-col">
+          <h4>Nossos canais</h4>
+          <div class="ef-link-list">
+            <a href="https://comunidade.auvp.com.br/" class="footer-link">Comunidade</a>
+            <a href="https://www.youtube.com/@AUVPCapital" target="_blank" class="footer-link ef-social">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M21.582 6.186a2.686 2.686 0 0 0-1.884-1.895C17.982 3.8 12 3.8 12 3.8s-5.982 0-7.698.491A2.686 2.686 0 0 0 2.418 6.186C1.927 7.9 1.927 12 1.927 12s0 4.1.491 5.814a2.686 2.686 0 0 0 1.884 1.895C5.982 20.2 12 20.2 12 20.2s5.982 0 7.698-.491a2.686 2.686 0 0 0 1.884-1.895C22.073 16.1 22.073 12 22.073 12s0-4.1-.491-5.814zM9.99 15.659V8.341l6.455 3.659-6.455 3.659z"/></svg>
+              Youtube
+            </a>
+            <a href="https://www.instagram.com/auvpcapital" target="_blank" class="footer-link ef-social">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              Instagram
+            </a>
+            <a href="https://open.spotify.com/show/4FUAeRg9G0ntPVDuC8Zpjp?si=353f3c809d6b468c&nd=1&dlsi=c4b0aeca0a1a4968" target="_blank" class="footer-link ef-social">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.394-.751.522-1.146.282-3.139-1.917-7.086-2.348-11.73-.128-.436.208-.958.024-1.167-.412-.208-.436-.024-.958.412-1.167 5.068-2.42 9.421-1.926 12.943.226.395.241.523.751.283 1.145zm1.432-3.21c-.302.493-.941.65-1.434.348-3.585-2.203-9.068-2.764-12.435-1.512-.562.208-1.184-.078-1.393-.64-.208-.562.078-1.184.64-1.393 3.882-1.44 9.945-.815 14.072 1.25.493.303.65.942.348 1.435zm.145-3.356C14.776 8.212 8.575 8.005 4.992 9.091c-.672.204-1.385-.178-1.589-.85-.204-.672.178-1.385.85-1.589 4.148-1.259 11.002-1.026 16.035 1.968.583.345.776 1.096.43 1.68-.344.582-1.096.775-1.68.43z"/></svg>
+              Spotify
+            </a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h6>Legal</h6>
-          <ul>
-            <li><a href="#">Privacidade</a></li>
-            <li><a href="#">Termos de uso</a></li>
-            <li><a href="#">Segurança e Open Finance</a></li>
-          </ul>
+
+        <!-- Outros produtos -->
+        <div class="ef-col ef-produtos">
+          <h4>Outros produtos</h4>
+          <div class="ef-produtos-grid">
+            <div class="ef-link-list">
+              <a href="https://www.auvpcapital.com.br/" class="footer-link">AUVP Capital</a>
+              <a href="https://www.auvp.com.br/" class="footer-link">AUVP Escola</a>
+              <a href="https://analitica.auvp.com.br/" class="footer-link">AUVP Analítica</a>
+              <a href="https://auvpagro.com.br/" class="footer-link">AUVP Agro</a>
+            </div>
+            <div class="ef-link-list">
+              <a href="http://auvpcapital.com.br/wealth" class="footer-link">AUVP Wealth</a>
+              <a href="http://auvpcapital.com.br/credito" class="footer-link">AUVP Crédito</a>
+              <a href="http://auvpcapital.com.br/cambio" class="footer-link">AUVP Câmbio</a>
+              <a href="https://auvpnews.com.br/" class="footer-link">AUVP News</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 AUVP. Todos os direitos reservados.</span>
-      <span>Minhas Finanças é uma ferramenta do ecossistema AUVP.</span>
     </div>
   </div>
 </footer>

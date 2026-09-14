@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Footer — réplica exata do footer de produtosauvp/lp-auvp-escola-prod
+   (mesma estrutura, textos, links e cores da aplicação de origem)
+   ========================================================================== */
+
+.escola-footer {
+  background: #0a0a0a;
+  color: #9ca3af;
+  border-top: 1px solid #111827;
+  padding-block: 60px;
+}
+@media (min-width: 768px) {
+  .escola-footer { padding-block: 120px; }
+}
+
+.escola-footer .ef-container {
+  width: 100%;
+  max-width: min(calc(100% - 3rem), 1200px);
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .escola-footer .ef-container { max-width: min(calc(100% - 4rem), 1200px); }
+}
+
+.ef-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+@media (min-width: 1024px) {
+  .ef-top { flex-direction: row; gap: 32px; }
+}
+
+.ef-brand { width: 100%; }
+@media (min-width: 1024px) {
+  .ef-brand { width: 33.3333%; padding-right: 32px; }
+}
+.ef-brand .ef-logo-link { display: inline-block; margin-bottom: 32px; }
+.ef-brand .ef-logo-link img { height: 80px; width: auto; }
+@media (min-width: 768px) {
+  .ef-brand .ef-logo-link img { height: 112px; }
+}
+.ef-brand p { font-size: 14px; line-height: 1.625; }
+.ef-brand .ef-tag { color: #e4e4e7; margin-bottom: 16px; }
+.ef-brand .ef-legal { color: #a1a1aa; }
+
+.ef-links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+@media (min-width: 640px) {
+  .ef-links { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) {
+  .ef-links { width: 66.6667%; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+}
+
+.ef-col h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.ef-col .ef-link-list { display: flex; flex-direction: column; gap: 16px; }
+
+.ef-col.ef-produtos { grid-column: span 1; }
+@media (min-width: 640px) {
+  .ef-col.ef-produtos { grid-column: span 2; }
+}
+.ef-produtos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.ef-produtos-grid .ef-link-list { gap: 16px; }
+
+.footer-link {
+  text-decoration: none;
+  color: #a1a1aa;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+.footer-link:hover { color: #efbf4e; }
+.footer-link.ef-social { display: flex; align-items: center; gap: 8px; }
+.footer-link.ef-social svg { flex-shrink: 0; }
