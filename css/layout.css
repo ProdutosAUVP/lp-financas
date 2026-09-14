@@ -20,14 +20,9 @@
   font-size: 17px;
   color: hsl(var(--foreground));
 }
-.logo .mark {
-  width: 32px; height: 32px; border-radius: 9px;
-  background: hsl(var(--primary));
-  display: flex; align-items: center; justify-content: center;
-  color: #fff;
-  font-family: var(--font-ui);
-  font-weight: 700;
-  font-size: 14px;
+.logo .mark-eye {
+  width: 28px; height: auto;
+  flex-shrink: 0;
 }
 .nav-links {
   display: flex; align-items: center; gap: 32px;
@@ -246,24 +241,4 @@
 .cta-final .btn-primary { background: #fff; color: hsl(var(--primary)); }
 .cta-final .btn-primary:hover { background: hsl(0 0% 92%); }
 
-/* ---------- Footer ---------- */
-.site-footer { border-top: 1px solid hsl(var(--border)); padding-block: 48px 32px; }
-.footer-top { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; margin-bottom: 36px; }
-.footer-brand .logo { margin-bottom: 12px; }
-.footer-brand p { font-size: 13.5px; color: hsl(var(--muted-foreground)); max-width: 260px; line-height: 1.6; }
-.footer-cols { display: flex; gap: 56px; flex-wrap: wrap; }
-.footer-col h6 { font-family: var(--font-ui); font-size: 12.5px; font-weight: 600; color: hsl(var(--muted-foreground)); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 14px; }
-.footer-col ul { display: flex; flex-direction: column; gap: 10px; }
-.footer-col a { font-size: 14px; color: hsl(var(--foreground)); }
-.footer-col a:hover { color: hsl(var(--primary)); }
-.footer-bottom {
-  display: flex; justify-content: space-between; align-items: center;
-  padding-top: 24px; border-top: 1px solid hsl(var(--border));
-  font-size: 12.5px; color: hsl(var(--muted-foreground));
-  flex-wrap: wrap; gap: 12px;
-}
-
-@media (max-width: 640px) {
-  .footer-top, .footer-bottom { flex-direction: column; align-items: flex-start; }
-  .footer-cols { gap: 32px; }
-}
+/* Footer: ver css/footer-escola.css (réplica exata do footer de lp-auvp-escola-prod) */
