@@ -111,6 +111,48 @@
   .budget-grid { grid-template-columns: 1fr; }
 }
 
+/* Card de meta financeira (rico, fiel à tela real) */
+.budget-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.budget-cards.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.budget-card { border: 1px solid hsl(var(--border)); border-radius: 10px; padding: 14px; background: hsl(var(--card)); }
+.budget-card-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+.budget-card-head .name { display: flex; align-items: center; gap: 7px; font-family: var(--font-ui); font-weight: 700; font-size: 12px; }
+.budget-card-head .name .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.budget-card-head .pct-badge { font-family: var(--font-ui); font-size: 10.5px; font-weight: 700; border: 1px solid hsl(var(--border)); border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
+.budget-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.budget-metric { background: hsl(var(--muted) / 0.6); border-radius: 8px; padding: 7px 9px; }
+.budget-metric .lbl { font-family: var(--font-ui); font-size: 8px; text-transform: uppercase; letter-spacing: 0.04em; color: hsl(var(--muted-foreground)); font-weight: 700; }
+.budget-metric .val { font-family: var(--font-display); font-weight: 700; font-size: 12.5px; margin-top: 2px; }
+.budget-card-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-family: var(--font-ui); font-size: 10.5px; }
+.budget-card-foot .left { color: hsl(var(--success)); font-weight: 600; }
+.budget-card-foot .right { color: hsl(var(--muted-foreground)); display: flex; align-items: center; gap: 4px; }
+
+@media (max-width: 560px) {
+  .budget-cards, .budget-cards.cols-3 { grid-template-columns: 1fr; }
+}
+
+/* ---------- Cartões ---------- */
+.cards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.card-tile { border: 1px solid hsl(var(--border)); border-radius: 12px; background: hsl(var(--card)); overflow: hidden; }
+.card-tile-art {
+  margin: 10px; border-radius: 10px; padding: 12px 14px;
+  height: 64px; color: #fff; position: relative;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.card-tile-art .digits { font-size: 11px; letter-spacing: 2px; display: flex; align-items: center; gap: 6px; opacity: 0.95; }
+.card-tile-art .digits svg { width: 12px; height: 12px; opacity: 0.85; }
+.card-tile-art .brand { font-family: var(--font-ui); font-size: 9.5px; font-weight: 700; background: hsl(0 0% 100% / 0.22); padding: 2px 8px; border-radius: 6px; align-self: flex-start; }
+.card-tile-body { padding: 0 14px 14px; }
+.card-tile-body .lbl { font-family: var(--font-ui); font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.04em; color: hsl(var(--muted-foreground)); font-weight: 700; margin-bottom: 3px; }
+.card-tile-body .val { font-family: var(--font-display); font-weight: 700; font-size: 15px; }
+.card-tile-body .val .due { font-family: var(--font-ui); font-weight: 500; font-size: 10px; color: hsl(var(--muted-foreground)); margin-left: 5px; }
+.card-tile-body .lbl.limit { margin-top: 10px; }
+.card-tile-foot { display: flex; justify-content: space-between; font-family: var(--font-ui); font-size: 9px; color: hsl(var(--muted-foreground)); margin-top: 6px; }
+
+@media (max-width: 560px) {
+  .cards-row { grid-template-columns: 1fr; }
+}
+
 /* ---------- Histórico Financeiro (Entrada x Saída) ---------- */
 .hist-months { display: flex; align-items: flex-end; gap: 10px; padding-bottom: 8px; border-bottom: 1px solid hsl(var(--border)); }
 .hist-month { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; }
