@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Interface real do produto (Minhas Finanças / Hub AUVP) — tema escuro,
+   recriada a partir de captura de tela real para o hero da LP.
+   ========================================================================== */
+
+.rp-shell {
+  --rp-bg: #0a0a0a;
+  --rp-card: #17171a;
+  --rp-border: rgba(255, 255, 255, 0.08);
+  --rp-text: #fafafa;
+  --rp-muted: #9a9aa2;
+  --rp-gold: #efbf4e;
+  --rp-green: #34d399;
+  --rp-red: #f87171;
+
+  background: var(--rp-bg);
+  color: var(--rp-text);
+  font-family: var(--font-ui);
+}
+
+/* ---------- Top bar ---------- */
+.rp-topbar {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 10px 18px;
+  border-bottom: 1px solid var(--rp-border);
+}
+.rp-brand {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+.rp-nav { display: flex; align-items: center; gap: 14px; flex: 1; min-width: 0; overflow: hidden; }
+.rp-nav span {
+  font-size: 10.5px;
+  color: var(--rp-muted);
+  white-space: nowrap;
+}
+.rp-nav span.active { color: #fff; font-weight: 600; }
+.rp-topbar-icons { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.rp-topbar-icons svg { width: 13px; height: 13px; color: var(--rp-muted); }
+
+/* ---------- Body: sidebar + main ---------- */
+.rp-body { display: grid; grid-template-columns: 44px 1fr; min-height: 460px; }
+
+.rp-sidebar {
+  border-right: 1px solid var(--rp-border);
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.rp-side-ic {
+  width: 28px; height: 28px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--rp-muted);
+}
+.rp-side-ic svg { width: 14px; height: 14px; }
+.rp-side-ic.active { background: var(--rp-gold); color: #18181b; }
+
+.rp-main { padding: 16px 18px 18px; min-width: 0; }
+
+.rp-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.rp-head h4 { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: #fff; }
+.rp-sub { font-size: 11px; color: var(--rp-muted); margin-top: 2px; }
+.rp-daterange { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.rp-pill {
+  font-size: 10px; font-weight: 600; color: var(--rp-muted);
+  background: var(--rp-card); border: 1px solid var(--rp-border);
+  border-radius: 999px; padding: 5px 10px; white-space: nowrap;
+}
+.rp-month {
+  font-size: 10.5px; font-weight: 600; color: #fff;
+  background: var(--rp-card); border: 1px solid var(--rp-border);
+  border-radius: 8px; padding: 5px 10px; white-space: nowrap;
+}
+
+.rp-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+.rp-stat {
+  background: var(--rp-card); border: 1px solid var(--rp-border); border-radius: 10px;
+  padding: 10px 12px;
+}
+.rp-stat-label { font-size: 9.5px; color: var(--rp-muted); font-weight: 600; }
+.rp-stat-value { font-family: var(--font-display); font-size: 14px; font-weight: 700; margin-top: 5px; color: #fff; }
+.rp-stat-value.pos { color: var(--rp-green); }
+.rp-stat-value.neg { color: var(--rp-red); }
+
+.rp-row { display: grid; grid-template-columns: 1.3fr 1fr; gap: 10px; margin-bottom: 10px; }
+.rp-card { background: var(--rp-card); border: 1px solid var(--rp-border); border-radius: 10px; padding: 12px; }
+.rp-card-title {
+  font-size: 11px; font-weight: 600; color: #fff;
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 8px;
+}
+.rp-cal-sub { font-size: 9.5px; color: var(--rp-muted); }
+.rp-cal-total { font-family: var(--font-display); font-size: 13px; font-weight: 700; color: #fff; margin: 4px 0 8px; }
+.rp-cal-total span { font-family: var(--font-ui); font-size: 9.5px; font-weight: 500; color: var(--rp-muted); margin-left: 5px; }
+
+.rp-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+.rp-cal-dow { font-size: 8px; color: var(--rp-muted); text-align: center; margin-bottom: 2px; }
+.rp-cal-grid i {
+  display: block; aspect-ratio: 1; border-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  font-style: normal;
+}
+.rp-cal-grid i.hit.lo { background: rgba(239, 191, 78, 0.15); }
+.rp-cal-grid i.hit.md { background: rgba(239, 191, 78, 0.35); }
+.rp-cal-grid i.hit.hi { background: rgba(239, 191, 78, 0.65); }
+
+.rp-toggle { display: flex; gap: 4px; }
+.rp-toggle button {
+  font-family: var(--font-ui); font-size: 9.5px; font-weight: 600;
+  color: var(--rp-muted); background: transparent; border: none;
+  border-radius: 6px; padding: 3px 8px;
+}
+.rp-toggle button.active { background: var(--rp-gold); color: #18181b; }
+
+.rp-tags-list { display: flex; flex-direction: column; gap: 9px; }
+.rp-tag-row { display: flex; align-items: center; gap: 7px; font-size: 10.5px; color: #e4e4e7; }
+.rp-tag-row .dot { width: 7px; height: 7px; border-radius: 2px; flex-shrink: 0; }
+.rp-tag-row b { margin-left: auto; font-weight: 700; color: #fff; }
+
+.rp-history .rp-bars { height: 76px; }
+.rp-history .bar { background: linear-gradient(180deg, var(--rp-gold) 0%, rgba(239, 191, 78, 0.5) 100%); }
+.rp-history .bar.peak { background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.6) 100%); }
+
+@media (max-width: 860px) {
+  .rp-nav span:nth-child(n+4) { display: none; }
+  .rp-body { grid-template-columns: 1fr; }
+  .rp-sidebar { display: none; }
+  .rp-stats { grid-template-columns: repeat(2, 1fr); }
+  .rp-row { grid-template-columns: 1fr; }
+}
