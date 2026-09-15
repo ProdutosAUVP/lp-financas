@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="css/narrative.css">
 <link rel="stylesheet" href="css/bento.css">
 <link rel="stylesheet" href="css/real-product.css">
+<link rel="stylesheet" href="css/product-components.css">
 <link rel="stylesheet" href="css/footer-escola.css">
 </head>
 <body>
@@ -77,7 +78,7 @@
           <div class="frame-body tight">
             <div class="rp-shell">
               <div class="rp-topbar">
-                <div class="rp-brand"><img src="assets/olho-amarelo.svg" alt="" class="mark-eye" width="16" height="10">AUVP</div>
+                <div class="rp-brand"><img src="assets/olho-preto.svg" alt="" class="mark-eye" width="16" height="10">AUVP</div>
                 <nav class="rp-nav">
                   <span>Aulas</span>
                   <span>Comunidade</span>
@@ -137,11 +138,15 @@
                     </div>
                     <div class="rp-card rp-tags">
                       <div class="rp-card-title">Por tags <span class="rp-toggle"><button class="active">Despesas</button><button>Receitas</button></span></div>
-                      <div class="rp-tags-list">
-                        <div class="rp-tag-row"><span class="dot" style="background:#EFBF4E"></span>Moradia<b>R$ 2.140</b></div>
-                        <div class="rp-tag-row"><span class="dot" style="background:#38BDF8"></span>Mercado<b>R$ 1.320</b></div>
-                        <div class="rp-tag-row"><span class="dot" style="background:#F87171"></span>Transporte<b>R$ 680</b></div>
-                        <div class="rp-tag-row"><span class="dot" style="background:#A78BFA"></span>Assinaturas<b>R$ 440</b></div>
+                      <div class="rp-donut-wrap">
+                        <div class="rp-donut" style="background: conic-gradient(#EFBF4E 0% 46.7%, #38BDF8 46.7% 75.5%, #F87171 75.5% 90.3%, #A78BFA 90.3% 100%);">
+                          <div class="rp-donut-center"><b>R$ 4.580</b><span>total no mês</span></div>
+                        </div>
+                        <div class="rp-tags-list">
+                          <div class="rp-tag-row"><span class="dot" style="background:#EFBF4E"></span>Moradia<span class="pct">46,7%</span><b>R$ 2.140</b></div>
+                          <div class="rp-tag-row"><span class="dot" style="background:#38BDF8"></span>Mercado<span class="pct">28,8%</span><b>R$ 1.320</b></div>
+                          <div class="rp-tag-row"><span class="dot" style="background:#F87171"></span>Transporte<span class="pct">14,8%</span><b>R$ 680</b></div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -164,8 +169,9 @@
         </div>
 
         <div class="float-card goal">
-          <div class="goal-head"><span class="name">Reserva de emergência</span><span class="pct">72%</span></div>
-          <div class="goal-bar-track"><div class="goal-bar-fill" style="width:72%"></div></div>
+          <div class="goal-head"><span class="name">🔵 Custos Fixos</span><span class="pct">92%</span></div>
+          <div class="goal-bar-track"><div class="goal-bar-fill" style="width:92%"></div></div>
+          <div style="font-size:10px;color:hsl(var(--muted-foreground));margin-top:6px;">R$ 2.337 de R$ 2.544 · meta de setembro</div>
         </div>
         <div class="float-card alert">
           <div style="display:flex;align-items:center;gap:8px;">
@@ -283,62 +289,78 @@
 
           <div class="narrative-panel" data-panel="p4">
             <div class="frame">
-              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Transações · outubro</span></div>
+              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Transações</span></div>
               <div class="frame-body">
-                <div class="tx-list">
-                  <div class="tx-row">
-                    <div class="tx-icon">🛒</div>
-                    <div class="tx-main"><div class="name">Supermercado Bom Preço</div><div class="cat">Mercado</div></div>
-                    <span class="tx-chip badge-muted">Automático</span>
-                    <div class="tx-amt neg">-R$ 284,90</div>
-                  </div>
-                  <div class="tx-row">
-                    <div class="tx-icon">🏠</div>
-                    <div class="tx-main"><div class="name">Aluguel</div><div class="cat">Moradia</div></div>
-                    <span class="tx-chip badge-muted">Recorrente</span>
-                    <div class="tx-amt neg">-R$ 1.850,00</div>
-                  </div>
-                  <div class="tx-row">
-                    <div class="tx-icon">💼</div>
-                    <div class="tx-main"><div class="name">Salário</div><div class="cat">Receita</div></div>
-                    <span class="tx-chip badge-positive">Receita</span>
-                    <div class="tx-amt pos">+R$ 6.200,00</div>
-                  </div>
-                  <div class="tx-row">
-                    <div class="tx-icon">🎬</div>
-                    <div class="tx-main"><div class="name">Streaming de vídeo</div><div class="cat">Assinaturas</div></div>
-                    <span class="tx-chip badge-info">Revisar</span>
-                    <div class="tx-amt neg">-R$ 39,90</div>
-                  </div>
-                  <div class="tx-row">
-                    <div class="tx-icon">🚕</div>
-                    <div class="tx-main"><div class="name">Corrida por aplicativo</div><div class="cat">Transporte</div></div>
-                    <span class="tx-chip badge-muted">Automático</span>
-                    <div class="tx-amt neg">-R$ 27,50</div>
-                  </div>
+                <div class="tx-toolbar">
+                  <div class="tx-search"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Buscar por descrição…</div>
+                  <div class="tx-filter-btn">Filtros <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+                  <span class="tx-count">48 transações</span>
+                  <a href="#comecar" class="tx-add-btn">+ Lançamento manual</a>
                 </div>
+                <table class="tx-table">
+                  <thead><tr><th>Data</th><th>Descrição</th><th>Valor</th><th>Tag</th><th>Conta</th></tr></thead>
+                  <tbody>
+                    <tr>
+                      <td class="date">15/09</td>
+                      <td class="desc"><strong>Pix para Supermercado Bom Preço</strong><small>Compra no débito</small></td>
+                      <td class="val neg">-R$ 284,90</td>
+                      <td><span class="tag-pill" style="background:hsl(var(--chart-1)/.15);color:hsl(var(--chart-1))">Alimentação</span></td>
+                      <td class="conta"><span class="bank-ic" style="background:hsl(var(--chart-4))"></span>Banco A</td>
+                    </tr>
+                    <tr>
+                      <td class="date">15/09</td>
+                      <td class="desc"><strong>Boleto Imobiliária Aluguel</strong><small>Recorrente</small></td>
+                      <td class="val neg">-R$ 1.850,00</td>
+                      <td><span class="tag-pill" style="background:hsl(var(--chart-3)/.15);color:hsl(var(--chart-3))">Moradia</span></td>
+                      <td class="conta"><span class="bank-ic" style="background:hsl(var(--chart-4))"></span>Banco A</td>
+                    </tr>
+                    <tr>
+                      <td class="date">10/09</td>
+                      <td class="desc"><strong>Pix Empresa LTDA</strong><small>Salário</small></td>
+                      <td class="val pos">+R$ 6.200,00</td>
+                      <td><span class="tag-pill" style="background:hsl(var(--success)/.15);color:hsl(var(--success))">Receita</span></td>
+                      <td class="conta"><span class="bank-ic" style="background:hsl(var(--chart-4))"></span>Banco A</td>
+                    </tr>
+                    <tr>
+                      <td class="date">08/09</td>
+                      <td class="desc"><strong>Streaming de vídeo</strong><small>Assinatura mensal</small></td>
+                      <td class="val neg">-R$ 39,90</td>
+                      <td><span class="tag-pill" style="background:hsl(var(--chart-2)/.15);color:hsl(var(--chart-2))">Assinaturas</span></td>
+                      <td class="conta"><span class="bank-ic" style="background:hsl(var(--chart-2))"></span>Cartão</td>
+                    </tr>
+                    <tr>
+                      <td class="date">05/09</td>
+                      <td class="desc"><strong>Corrida por aplicativo</strong><small>Automático</small></td>
+                      <td class="val neg">-R$ 27,50</td>
+                      <td><span class="tag-pill" style="background:hsl(var(--destructive)/.12);color:hsl(var(--destructive))">Transporte</span></td>
+                      <td class="conta"><span class="bank-ic" style="background:hsl(var(--chart-2))"></span>Cartão</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
 
           <div class="narrative-panel" data-panel="p5">
             <div class="frame">
-              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas</span></div>
+              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas Financeiras</span></div>
               <div class="frame-body">
-                <div class="goal-card">
-                  <div class="goal-head"><span class="name">🛟 Reserva de emergência</span><span class="pct">72%</span></div>
-                  <div class="goal-bar-track"><div class="goal-bar-fill" data-goal="72" style="width:0"></div></div>
-                  <div class="goal-foot"><span>R$ 14.400 de R$ 20.000</span><span>Meta: mar/2027</span></div>
-                </div>
-                <div class="goal-card">
-                  <div class="goal-head"><span class="name">✈️ Viagem em família</span><span class="pct">41%</span></div>
-                  <div class="goal-bar-track"><div class="goal-bar-fill" data-goal="41" style="width:0"></div></div>
-                  <div class="goal-foot"><span>R$ 2.460 de R$ 6.000</span><span>Meta: jul/2027</span></div>
-                </div>
-                <div class="goal-card">
-                  <div class="goal-head"><span class="name">🏠 Entrada do apartamento</span><span class="pct">18%</span></div>
-                  <div class="goal-bar-track"><div class="goal-bar-fill" data-goal="18" style="width:0"></div></div>
-                  <div class="goal-foot"><span>R$ 18.000 de R$ 100.000</span><span>Meta: 2029</span></div>
+                <div class="budget-panel">
+                  <div class="budget-row">
+                    <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-3))"></span>Custos Fixos <span class="alloc">30%</span></span><span class="pct">92%</span></div>
+                    <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="92" style="width:0;background:hsl(var(--chart-3))"></div></div>
+                    <div class="budget-foot"><span>R$ 2.337 de R$ 2.544</span><span>faltam R$ 207</span></div>
+                  </div>
+                  <div class="budget-row">
+                    <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-5))"></span>Conforto <span class="alloc">15%</span></span><span class="pct">67%</span></div>
+                    <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="67" style="width:0;background:hsl(var(--chart-5))"></div></div>
+                    <div class="budget-foot"><span>R$ 848 de R$ 1.272</span><span>faltam R$ 424</span></div>
+                  </div>
+                  <div class="budget-row">
+                    <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-6))"></span>Liberdade Financeira <span class="alloc">25%</span></span><span class="pct">10%</span></div>
+                    <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="10" style="width:0;background:hsl(var(--chart-6))"></div></div>
+                    <div class="budget-foot"><span>R$ 210 de R$ 2.120</span><span>faltam R$ 1.910</span></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -365,7 +387,7 @@
         </div>
         <div class="narrative-item" data-target="p5">
           <h3>E aí, o dinheiro passa a ter destino.</h3>
-          <p>Com a visão clara do que entra e sai, dá pra colocar metas de verdade: reserva de emergência, viagem, entrada do apartamento, e ver o progresso em tempo real.</p>
+          <p>Você define quanto cada categoria pode gastar no mês, e o painel mostra o quanto já foi usado. Custos fixos, conforto, liberdade financeira: cada meta com seu próprio orçamento.</p>
         </div>
       </div>
     </div>
@@ -394,13 +416,13 @@
       <div class="bento-tile tile-goals">
         <div class="bento-visual">
           <div class="goal-card mini">
-            <div class="goal-head"><span class="name">🛟 Reserva</span><span class="pct">72%</span></div>
-            <div class="goal-bar-track"><div class="goal-bar-fill" style="width:72%"></div></div>
+            <div class="goal-head"><span class="name">🔵 Custos Fixos</span><span class="pct">92%</span></div>
+            <div class="goal-bar-track"><div class="goal-bar-fill" style="width:92%"></div></div>
           </div>
         </div>
         <div class="bento-text">
-          <h4>Metas com progresso real</h4>
-          <p>Veja quanto falta e se o ritmo atual é suficiente.</p>
+          <h4>Metas Financeiras por categoria</h4>
+          <p>Defina um orçamento mensal e veja quanto já foi usado.</p>
         </div>
       </div>
 
@@ -470,8 +492,8 @@
           <span class="t2">O comparativo que mostra se o mês fechou no azul.</span>
         </button>
         <button class="tour-tab" data-tab="metas">
-          <span class="t1"><span class="dot"></span> Metas e evolução</span>
-          <span class="t2">Projeção de quando cada meta será alcançada no ritmo atual.</span>
+          <span class="t1"><span class="dot"></span> Metas Financeiras</span>
+          <span class="t2">Um orçamento por categoria, com o quanto já foi usado no mês.</span>
         </button>
         <button class="tour-tab" data-tab="vazio">
           <span class="t1"><span class="dot"></span> Primeiros passos</span>
@@ -564,20 +586,20 @@
         <!-- Receitas x despesas -->
         <div class="tour-panel" data-panel="receitasdespesas">
           <div class="frame">
-            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Receitas x despesas · últimos 6 meses</span></div>
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Histórico Financeiro · 6 meses</span></div>
             <div class="frame-body">
-              <div class="panel-title">Balanço mensal</div>
-              <div class="bars" style="height:120px;margin-bottom:14px;">
-                <div class="bar" style="height:60%"></div>
-                <div class="bar muted" style="height:38%"></div>
-                <div class="bar" style="height:74%"></div>
-                <div class="bar muted" style="height:44%"></div>
-                <div class="bar" style="height:66%"></div>
-                <div class="bar peak" style="height:90%"></div>
+              <div class="panel-title">Comparativo mensal de entradas e saídas</div>
+              <div class="hist-months">
+                <div class="hist-month"><div class="bars"><div class="bar" style="height:70%;background:hsl(var(--success))"></div><div class="bar" style="height:74%;background:hsl(var(--destructive))"></div></div><span class="hist-label">abr</span></div>
+                <div class="hist-month"><div class="bars"><div class="bar" style="height:48%;background:hsl(var(--success))"></div><div class="bar" style="height:82%;background:hsl(var(--destructive))"></div></div><span class="hist-label">mai</span></div>
+                <div class="hist-month"><div class="bars"><div class="bar" style="height:60%;background:hsl(var(--success))"></div><div class="bar" style="height:68%;background:hsl(var(--destructive))"></div></div><span class="hist-label">jun</span></div>
+                <div class="hist-month"><div class="bars"><div class="bar" style="height:66%;background:hsl(var(--success))"></div><div class="bar" style="height:52%;background:hsl(var(--destructive))"></div></div><span class="hist-label">jul</span></div>
+                <div class="hist-month"><div class="bars"><div class="bar" style="height:78%;background:hsl(var(--success))"></div><div class="bar" style="height:88%;background:hsl(var(--destructive))"></div></div><span class="hist-label">ago</span></div>
+                <div class="hist-month"><div class="bars"><div class="bar" style="height:82%;background:hsl(var(--success))"></div><div class="bar" style="height:58%;background:hsl(var(--destructive))"></div></div><span class="hist-label">set</span></div>
               </div>
-              <div style="display:flex;gap:20px;font-family:var(--font-ui);font-size:12.5px;">
-                <span style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:3px;background:hsl(var(--chart-1));display:inline-block;"></span> Receitas</span>
-                <span style="display:flex;align-items:center;gap:6px;"><span style="width:9px;height:9px;border-radius:3px;background:hsl(var(--muted-foreground));display:inline-block;"></span> Despesas</span>
+              <div class="hist-legend">
+                <span><i style="background:hsl(var(--success))"></i>Entrada</span>
+                <span><i style="background:hsl(var(--destructive))"></i>Saída</span>
               </div>
             </div>
           </div>
@@ -586,18 +608,31 @@
         <!-- Metas -->
         <div class="tour-panel" data-panel="metas">
           <div class="frame">
-            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Reserva de emergência · evolução</span></div>
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas Financeiras · setembro</span></div>
             <div class="frame-body">
-              <div class="goal-head" style="margin-bottom:16px;"><span class="name">No ritmo atual, meta batida em <strong>4 meses</strong></span><span class="pct">72%</span></div>
-              <div class="bars" style="height:90px;margin-bottom:8px;">
-                <div class="bar muted" style="height:20%"></div>
-                <div class="bar muted" style="height:34%"></div>
-                <div class="bar muted" style="height:48%"></div>
-                <div class="bar" style="height:58%"></div>
-                <div class="bar" style="height:65%"></div>
-                <div class="bar peak" style="height:72%"></div>
+              <div class="panel-title">Quanto cada orçamento já usou da meta do mês</div>
+              <div class="budget-panel budget-grid">
+                <div class="budget-row">
+                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-3))"></span>Custos Fixos <span class="alloc">30%</span></span><span class="pct">92%</span></div>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="92" style="width:0;background:hsl(var(--chart-3))"></div></div>
+                  <div class="budget-foot"><span>R$ 2.337 de R$ 2.544</span><span>faltam R$ 207</span></div>
+                </div>
+                <div class="budget-row">
+                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-5))"></span>Conforto <span class="alloc">15%</span></span><span class="pct">67%</span></div>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="67" style="width:0;background:hsl(var(--chart-5))"></div></div>
+                  <div class="budget-foot"><span>R$ 848 de R$ 1.272</span><span>faltam R$ 424</span></div>
+                </div>
+                <div class="budget-row">
+                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-6))"></span>Prazeres <span class="alloc">10%</span></span><span class="pct">23%</span></div>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="23" style="width:0;background:hsl(var(--chart-6))"></div></div>
+                  <div class="budget-foot"><span>R$ 196 de R$ 848</span><span>faltam R$ 652</span></div>
+                </div>
+                <div class="budget-row">
+                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-7))"></span>Liberdade Financeira <span class="alloc">25%</span></span><span class="pct">10%</span></div>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="10" style="width:0;background:hsl(var(--chart-7))"></div></div>
+                  <div class="budget-foot"><span>R$ 210 de R$ 2.120</span><span>faltam R$ 1.910</span></div>
+                </div>
               </div>
-              <div class="goal-foot"><span>R$ 14.400 acumulados</span><span>Meta: R$ 20.000</span></div>
             </div>
           </div>
         </div>
