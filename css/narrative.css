@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Narrativa com scroll interativo (sem numeração de passos)
+   Painel fixo (sticky) troca de visual conforme o item de texto em foco.
+   ========================================================================== */
+
+.narrative-intro { max-width: 640px; margin-bottom: clamp(48px, 7vw, 88px); }
+.narrative-intro h2 { font-size: clamp(28px, 3.6vw, 42px); }
+.narrative-intro p { font-size: 16px; color: hsl(var(--muted-foreground)); margin-top: 14px; line-height: 1.6; }
+
+.narrative-scroll {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.narrative-sticky {
+  position: sticky;
+  top: 96px;
+}
+
+.narrative-visual {
+  position: relative;
+  height: 520px;
+}
+
+.narrative-panel {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px) scale(0.98);
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s;
+}
+.narrative-panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s;
+  z-index: 2;
+}
+
+.narrative-panel .frame { height: 100%; display: flex; flex-direction: column; }
+.narrative-panel .frame-body { flex: 1; min-height: 0; overflow: hidden; }
+.narrative-panel .scatter { height: 100%; }
+
+.narrative-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.narrative-item {
+  padding-block: 24vh;
+  opacity: 0.32;
+  transition: opacity 0.4s ease;
+}
+.narrative-item:first-child { padding-top: 4px; }
+.narrative-item:last-child { padding-bottom: 8vh; }
+.narrative-item.active { opacity: 1; }
+
+.narrative-item h3 { font-size: clamp(22px, 2.6vw, 28px); }
+.narrative-item p {
+  font-size: 16px;
+  color: hsl(var(--muted-foreground));
+  margin-top: 12px;
+  line-height: 1.65;
+  max-width: 420px;
+}
+
+@media (max-width: 900px) {
+  .narrative-scroll { grid-template-columns: 1fr; gap: 28px; }
+  .narrative-sticky { position: sticky; top: 84px; }
+  .narrative-visual { height: 400px; }
+  .narrative-item { padding-block: 12vh; }
+  .narrative-item:first-child { padding-top: 0; }
+}
+
+@media (max-width: 560px) {
+  .narrative-visual { height: 340px; }
+}
