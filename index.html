@@ -187,7 +187,8 @@
   </section>
 
   <!-- ============ NARRATIVA (scroll interativo) ============ -->
-  <section class="section narrative container" id="historia">
+  <section class="section band-soft" id="historia">
+  <div class="container">
     <div class="narrative-intro" data-reveal>
       <h2>Sua vida financeira já existe. Ela só está espalhada.</h2>
       <p>O Minhas Finanças não cria dados novos, ele organiza os que você já tem, à medida que você rola a página.</p>
@@ -243,7 +244,7 @@
                 <div class="panel-title">Contas conectadas <span class="more">+ Adicionar</span></div>
                 <div class="account-row">
                   <div class="logo" style="background:hsl(var(--chart-4))">BA</div>
-                  <div class="info"><div class="name">Banco A · Corrente</div><div class="meta">Conectado via Open Finance</div></div>
+                  <div class="info"><div class="name">Banco A · Corrente</div><div class="meta">Sincronizada em 15/09 09:06</div></div>
                   <div class="val">R$ 3.240</div>
                 </div>
                 <div class="account-row">
@@ -253,7 +254,7 @@
                 </div>
                 <div class="account-row">
                   <div class="logo" style="background:hsl(var(--chart-3))">CO</div>
-                  <div class="info"><div class="name">Corretora</div><div class="meta">CDB + Tesouro Direto</div></div>
+                  <div class="info"><div class="name">Corretora</div><div class="meta">Sincronizada em 15/09 09:02</div></div>
                   <div class="val">R$ 12.560</div>
                 </div>
                 <div class="account-row">
@@ -345,21 +346,43 @@
             <div class="frame">
               <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas Financeiras</span></div>
               <div class="frame-body">
-                <div class="budget-panel">
-                  <div class="budget-row">
-                    <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-3))"></span>Custos Fixos <span class="alloc">30%</span></span><span class="pct">92%</span></div>
+                <div class="panel-title">Distribuição da sua renda mensal por categoria</div>
+                <div class="budget-cards">
+                  <div class="budget-card">
+                    <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-3))"></span>Custos Fixos</span><span class="pct-badge">91,88%</span></div>
                     <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="92" style="width:0;background:hsl(var(--chart-3))"></div></div>
-                    <div class="budget-foot"><span>R$ 2.337 de R$ 2.544</span><span>faltam R$ 207</span></div>
+                    <div class="budget-metrics">
+                      <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 2.337,11</div></div>
+                      <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 2.543,74</div></div>
+                    </div>
+                    <div class="budget-card-foot"><span class="left">+R$ 206,63 restante</span><span class="right">25 transações</span></div>
                   </div>
-                  <div class="budget-row">
-                    <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-5))"></span>Conforto <span class="alloc">15%</span></span><span class="pct">67%</span></div>
+                  <div class="budget-card">
+                    <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-5))"></span>Conforto</span><span class="pct-badge">66,69%</span></div>
                     <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="67" style="width:0;background:hsl(var(--chart-5))"></div></div>
-                    <div class="budget-foot"><span>R$ 848 de R$ 1.272</span><span>faltam R$ 424</span></div>
+                    <div class="budget-metrics">
+                      <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 848,19</div></div>
+                      <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 1.271,87</div></div>
+                    </div>
+                    <div class="budget-card-foot"><span class="left">+R$ 423,68 restante</span><span class="right">18 transações</span></div>
                   </div>
-                  <div class="budget-row">
-                    <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-6))"></span>Liberdade Financeira <span class="alloc">25%</span></span><span class="pct">10%</span></div>
-                    <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="10" style="width:0;background:hsl(var(--chart-6))"></div></div>
-                    <div class="budget-foot"><span>R$ 210 de R$ 2.120</span><span>faltam R$ 1.910</span></div>
+                  <div class="budget-card">
+                    <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-6))"></span>Prazeres</span><span class="pct-badge">23,17%</span></div>
+                    <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="23" style="width:0;background:hsl(var(--chart-6))"></div></div>
+                    <div class="budget-metrics">
+                      <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 196,44</div></div>
+                      <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 847,91</div></div>
+                    </div>
+                    <div class="budget-card-foot"><span class="left">+R$ 651,47 restante</span><span class="right">5 transações</span></div>
+                  </div>
+                  <div class="budget-card">
+                    <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-7))"></span>Liberdade Financeira</span><span class="pct-badge">9,91%</span></div>
+                    <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="10" style="width:0;background:hsl(var(--chart-7))"></div></div>
+                    <div class="budget-metrics">
+                      <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 210,00</div></div>
+                      <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 2.119,78</div></div>
+                    </div>
+                    <div class="budget-card-foot"><span class="left">+R$ 1.909,78 restante</span><span class="right">3 transações</span></div>
                   </div>
                 </div>
               </div>
@@ -391,10 +414,12 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- ============ TUDO NUM SÓ LUGAR (bento, ref. Copilot Money) ============ -->
-  <section class="section container" id="recursos">
+  <section class="section" id="recursos">
+  <div class="container">
     <div class="section-head center" data-reveal>
       <h2>Tudo o que você precisa, numa só plataforma.</h2>
       <p>Sem planilha, sem ficar trocando de tela. O que muda de verdade no seu dia a dia.</p>
@@ -465,10 +490,12 @@
         <p>Open Finance regulado pelo Banco Central e dados criptografados.</p>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- ============ PRODUCT TOUR ============ -->
-  <section class="section container" id="tour" style="background:hsl(var(--muted)/0.35); border-radius:32px;">
+  <section class="section band-soft" id="tour">
+  <div class="container">
     <div class="section-head center" data-reveal>
       <h2>Cada tela pensada para um momento da sua rotina financeira.</h2>
     </div>
@@ -482,6 +509,10 @@
         <button class="tour-tab" data-tab="manual">
           <span class="t1"><span class="dot"></span> Cadastro manual</span>
           <span class="t2">Para o que não dá ou não precisa conectar automaticamente.</span>
+        </button>
+        <button class="tour-tab" data-tab="cartoes">
+          <span class="t1"><span class="dot"></span> Cartões</span>
+          <span class="t2">Fatura aberta e limite utilizado de cada cartão, num só lugar.</span>
         </button>
         <button class="tour-tab" data-tab="categorizacao">
           <span class="t1"><span class="dot"></span> Categorização</span>
@@ -558,6 +589,43 @@
           </div>
         </div>
 
+        <!-- Cartões -->
+        <div class="tour-panel" data-panel="cartoes">
+          <div class="frame">
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Cartões (4)</span></div>
+            <div class="frame-body">
+              <div class="cards-row">
+                <div class="card-tile">
+                  <div class="card-tile-art" style="background:linear-gradient(135deg,hsl(var(--chart-3)),hsl(var(--brand-dark)))">
+                    <span class="digits"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> •••• •••• •••• 4471</span>
+                    <span class="brand">BTG PLATINUM</span>
+                  </div>
+                  <div class="card-tile-body">
+                    <div class="lbl">Fatura aberta</div>
+                    <div class="val">R$ 1.151,67<span class="due">vence dia 07</span></div>
+                    <div class="lbl limit">Limite utilizado</div>
+                    <div class="goal-bar-track"><div class="goal-bar-fill" style="width:38%"></div></div>
+                    <div class="card-tile-foot"><span>R$ 2.565 de R$ 6.750</span><span>R$ 4.185 disponíveis</span></div>
+                  </div>
+                </div>
+                <div class="card-tile">
+                  <div class="card-tile-art" style="background:linear-gradient(135deg,hsl(var(--chart-8)),#1c1c1e)">
+                    <span class="digits"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> •••• •••• •••• 8823</span>
+                    <span class="brand">MERCADO PAGO</span>
+                  </div>
+                  <div class="card-tile-body">
+                    <div class="lbl">Fatura aberta</div>
+                    <div class="val">R$ 0,00<span class="due">vence dia 07</span></div>
+                    <div class="lbl limit">Limite utilizado</div>
+                    <div class="goal-bar-track"><div class="goal-bar-fill" style="width:0%"></div></div>
+                    <div class="card-tile-foot"><span>R$ 0 de R$ 100</span><span>R$ 100 disponíveis</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Categorização -->
         <div class="tour-panel" data-panel="categorizacao">
           <div class="frame">
@@ -608,29 +676,63 @@
         <!-- Metas -->
         <div class="tour-panel" data-panel="metas">
           <div class="frame">
-            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas Financeiras · setembro</span></div>
+            <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Metas financeiras · setembro</span></div>
             <div class="frame-body">
-              <div class="panel-title">Quanto cada orçamento já usou da meta do mês</div>
-              <div class="budget-panel budget-grid">
-                <div class="budget-row">
-                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-3))"></span>Custos Fixos <span class="alloc">30%</span></span><span class="pct">92%</span></div>
+              <div class="panel-title">Distribuição da sua renda mensal por categoria <span class="more">Ajustar metas ›</span></div>
+              <div class="budget-cards cols-3">
+                <div class="budget-card">
+                  <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-3))"></span>Custos Fixos</span><span class="pct-badge">91,88%</span></div>
                   <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="92" style="width:0;background:hsl(var(--chart-3))"></div></div>
-                  <div class="budget-foot"><span>R$ 2.337 de R$ 2.544</span><span>faltam R$ 207</span></div>
+                  <div class="budget-metrics">
+                    <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 2.337</div></div>
+                    <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 2.544</div></div>
+                  </div>
+                  <div class="budget-card-foot"><span class="left">+R$ 207 restante</span><span class="right">25 tx.</span></div>
                 </div>
-                <div class="budget-row">
-                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-5))"></span>Conforto <span class="alloc">15%</span></span><span class="pct">67%</span></div>
+                <div class="budget-card">
+                  <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-5))"></span>Conforto</span><span class="pct-badge">66,69%</span></div>
                   <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="67" style="width:0;background:hsl(var(--chart-5))"></div></div>
-                  <div class="budget-foot"><span>R$ 848 de R$ 1.272</span><span>faltam R$ 424</span></div>
+                  <div class="budget-metrics">
+                    <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 848</div></div>
+                    <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 1.272</div></div>
+                  </div>
+                  <div class="budget-card-foot"><span class="left">+R$ 424 restante</span><span class="right">18 tx.</span></div>
                 </div>
-                <div class="budget-row">
-                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-6))"></span>Prazeres <span class="alloc">10%</span></span><span class="pct">23%</span></div>
+                <div class="budget-card">
+                  <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-2))"></span>Metas</span><span class="pct-badge">3,62%</span></div>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="4" style="width:0;background:hsl(var(--chart-2))"></div></div>
+                  <div class="budget-metrics">
+                    <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 46</div></div>
+                    <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 1.272</div></div>
+                  </div>
+                  <div class="budget-card-foot"><span class="left">+R$ 1.226 restante</span><span class="right">1 tx.</span></div>
+                </div>
+                <div class="budget-card">
+                  <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-6))"></span>Prazeres</span><span class="pct-badge">23,17%</span></div>
                   <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="23" style="width:0;background:hsl(var(--chart-6))"></div></div>
-                  <div class="budget-foot"><span>R$ 196 de R$ 848</span><span>faltam R$ 652</span></div>
+                  <div class="budget-metrics">
+                    <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 196</div></div>
+                    <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 848</div></div>
+                  </div>
+                  <div class="budget-card-foot"><span class="left">+R$ 651 restante</span><span class="right">5 tx.</span></div>
                 </div>
-                <div class="budget-row">
-                  <div class="budget-row-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-7))"></span>Liberdade Financeira <span class="alloc">25%</span></span><span class="pct">10%</span></div>
+                <div class="budget-card">
+                  <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-3)/.6)"></span>Conhecimento</span><span class="pct-badge">Sem gastos</span></div>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="0" style="width:0;background:hsl(var(--chart-3)/.6)"></div></div>
+                  <div class="budget-metrics">
+                    <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 0</div></div>
+                    <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 424</div></div>
+                  </div>
+                  <div class="budget-card-foot"><span class="left">+R$ 424 restante</span><span class="right">0 tx.</span></div>
+                </div>
+                <div class="budget-card">
+                  <div class="budget-card-head"><span class="name"><span class="dot" style="background:hsl(var(--chart-7))"></span>Liberdade Financeira</span><span class="pct-badge">9,91%</span></div>
                   <div class="budget-bar-track"><div class="budget-bar-fill" data-goal="10" style="width:0;background:hsl(var(--chart-7))"></div></div>
-                  <div class="budget-foot"><span>R$ 210 de R$ 2.120</span><span>faltam R$ 1.910</span></div>
+                  <div class="budget-metrics">
+                    <div class="budget-metric"><div class="lbl">Gasto</div><div class="val">R$ 210</div></div>
+                    <div class="budget-metric"><div class="lbl">Previsto</div><div class="val">R$ 2.120</div></div>
+                  </div>
+                  <div class="budget-card-foot"><span class="left">+R$ 1.910 restante</span><span class="right">3 tx.</span></div>
                 </div>
               </div>
             </div>
@@ -653,10 +755,12 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- ============ PROVA SOCIAL ============ -->
-  <section class="section container" id="depoimentos">
+  <section class="section" id="depoimentos">
+  <div class="container">
     <div class="proof-stats" data-reveal>
       <div class="proof-stat"><div class="num" data-count-to="40" data-prefix="+" data-suffix=" mil">+0 mil</div><div class="lbl">contas conectadas</div></div>
       <div class="proof-stat"><div class="num" data-count-to="210" data-prefix="R$ " data-suffix=" mi">R$ 0 mi</div><div class="lbl">organizados na plataforma</div></div>
@@ -668,28 +772,27 @@
       <h2>De "não sei onde meu dinheiro vai" para "eu vejo tudo".</h2>
     </div>
 
-    <div class="quotes-grid" data-reveal>
+    <div class="quotes-grid quotes-grid-2" data-reveal>
       <div class="quote-card">
         <div class="stars">★★★★★</div>
-        <p>"Eu tinha três telas de banco abertas toda hora. Hoje é uma só. Descobri que gastava R$ 400 por mês em assinaturas que nem lembrava."</p>
-        <div class="who"><div class="avatar">CT</div><div><div class="name">Camila T.</div><div class="role">Usa há 8 meses</div></div></div>
+        <p>"O novo "Minhas Finanças" tá de fato muito bom, a integração com o MCP foi uma virada de chave. Facilita muito as categorizações, era muito moroso categorizar tudo manualmente todo mês. Agora já deixei o ano todo ajustado. Inclusive estou deixando algumas sugestões de melhorias lá! Ótimo trabalho, parabéns!"</p>
+        <div class="who"><div class="avatar">JV</div><div><div class="name">João Vitor</div><div class="role">Cliente Minhas Finanças</div></div></div>
       </div>
       <div class="quote-card">
         <div class="stars">★★★★★</div>
-        <p>"Cadastrei minhas contas manuais também, e não só as que conectam. Pela primeira vez meu patrimônio total está certo em um lugar só."</p>
-        <div class="who"><div class="avatar">RA</div><div><div class="name">Rodrigo A.</div><div class="role">Autônomo</div></div></div>
-      </div>
-      <div class="quote-card">
-        <div class="stars">★★★★★</div>
-        <p>"A meta de entrada do apartamento parecia impossível até eu ver o progresso mês a mês. Isso mudou o jeito que eu poupo."</p>
-        <div class="who"><div class="avatar">JL</div><div><div class="name">Julia L.</div><div class="role">Usa há 1 ano</div></div></div>
+        <p>"Comecei a controlar minhas finanças pela ferramenta da AUVP, parabéns ao time tech, consegui realmente ter clareza dos meus números."</p>
+        <div class="who"><div class="avatar">M</div><div><div class="name">Marcelo</div><div class="role">Cliente Minhas Finanças</div></div></div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- ============ CTA FINAL ============ -->
-  <section class="container" style="padding-bottom:clamp(64px,9vw,128px);" id="comecar">
+  <section class="section" id="comecar">
+  <div class="container">
     <div class="cta-final" data-reveal>
+      <div class="cta-final-glow" aria-hidden="true"></div>
+      <span class="eyebrow cta-eyebrow">Comece agora</span>
       <h2>Pare de somar tudo na cabeça.</h2>
       <p>Conecte suas contas ou cadastre na mão. Em minutos você vê sua vida financeira inteira, num só painel.</p>
       <div class="hero-ctas">
@@ -697,6 +800,7 @@
         <a href="#login" class="btn btn-ghost btn-lg">Já sou cliente AUVP</a>
       </div>
     </div>
+  </div>
   </section>
 </main>
 
