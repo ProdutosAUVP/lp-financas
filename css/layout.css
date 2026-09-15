@@ -19,6 +19,10 @@
   font-weight: 700;
   font-size: 17px;
   color: hsl(var(--foreground));
+  white-space: nowrap;
+}
+@media (max-width: 420px) {
+  .logo { font-size: 14.5px; gap: 7px; }
 }
 .logo .mark-eye {
   width: 28px; height: auto;
@@ -97,9 +101,9 @@
   padding: 12px 14px;
 }
 .float-card.goal { bottom: -18px; left: -26px; width: 178px; }
-.float-card.alert { top: 108px; right: -22px; width: 168px; }
+.float-card.alert { bottom: -18px; right: -22px; width: 168px; }
 
-.hero-dash-frame { max-width: 640px; margin-inline: auto; }
+.hero-dash-frame { max-width: 720px; margin-inline: auto; }
 
 @media (max-width: 980px) {
   .hero-top { grid-template-columns: 1fr; }
@@ -179,7 +183,6 @@
 .cta-final h2 { font-size: clamp(28px, 3.6vw, 42px); color: #fff; max-width: 640px; margin-inline: auto; }
 .cta-final p { color: hsl(0 0% 100% / 0.78); font-size: 17px; margin-top: 16px; max-width: 520px; margin-inline: auto; }
 .cta-final .hero-ctas { justify-content: center; margin-top: 32px; }
-.cta-final .btn-primary { background: #fff; color: hsl(var(--primary)); }
-.cta-final .btn-primary:hover { background: hsl(0 0% 92%); }
+.cta-final .btn-ghost:hover, .cta-final .btn-outline-invert:hover { color: #18181b; }
 
 /* Footer: ver css/footer-escola.css (réplica exata do footer de lp-auvp-escola-prod) */

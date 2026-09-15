@@ -16,7 +16,7 @@
 
 .narrative-sticky {
   position: sticky;
-  top: 96px;
+  top: max(96px, calc(50vh - 260px));
 }
 
 .narrative-visual {
@@ -50,12 +50,12 @@
 }
 
 .narrative-item {
-  padding-block: 24vh;
+  padding-block: 9vh;
   opacity: 0.32;
   transition: opacity 0.4s ease;
 }
 .narrative-item:first-child { padding-top: 4px; }
-.narrative-item:last-child { padding-bottom: 8vh; }
+.narrative-item:last-child { padding-bottom: 4vh; }
 .narrative-item.active { opacity: 1; }
 
 .narrative-item h3 { font-size: clamp(22px, 2.6vw, 28px); }
@@ -69,12 +69,13 @@
 
 @media (max-width: 900px) {
   .narrative-scroll { grid-template-columns: 1fr; gap: 28px; }
-  .narrative-sticky { position: sticky; top: 84px; }
+  .narrative-sticky { position: sticky; top: max(84px, calc(50vh - 200px)); }
   .narrative-visual { height: 400px; }
-  .narrative-item { padding-block: 12vh; }
+  .narrative-item { padding-block: 7vh; }
   .narrative-item:first-child { padding-top: 0; }
 }
 
 @media (max-width: 560px) {
   .narrative-visual { height: 340px; }
+  .narrative-sticky { top: max(84px, calc(50vh - 170px)); }
 }
