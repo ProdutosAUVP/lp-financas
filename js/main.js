@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bar.style.height = '0%';
       requestAnimationFrame(() => requestAnimationFrame(() => { bar.style.height = finalHeight; }));
     });
-    root.querySelectorAll('.donut').forEach((donut) => donut.classList.add('grown'));
+    root.querySelectorAll('.donut, .usage-donut').forEach((donut) => donut.classList.add('grown'));
     root.querySelectorAll('.goal-bar-fill[data-goal], .budget-bar-fill[data-goal]').forEach((fill) => {
       if (fill.dataset.animated) return;
       fill.dataset.animated = 'true';

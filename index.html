@@ -239,32 +239,58 @@
 
           <div class="narrative-panel" data-panel="p2">
             <div class="frame">
-              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Visão geral</span></div>
+              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Contas</span></div>
               <div class="frame-body">
-                <div class="panel-title">Contas conectadas <span class="more">+ Adicionar</span></div>
-                <div class="account-row">
-                  <div class="logo" style="background:hsl(var(--chart-4))">BA</div>
-                  <div class="info"><div class="name">Banco A · Corrente</div><div class="meta">Sincronizada em 15/09 09:06</div></div>
-                  <div class="val">R$ 3.240</div>
+                <div class="accounts-page-head">
+                  <div>
+                    <h4>Contas</h4>
+                    <div class="sub">Gerencie suas contas bancárias e cartões.</div>
+                  </div>
+                  <div class="accounts-page-actions">
+                    <span class="ap-btn">Ordenar</span>
+                    <span class="ap-btn gold">+ Nova conta</span>
+                  </div>
                 </div>
-                <div class="account-row">
-                  <div class="logo" style="background:hsl(var(--chart-2))">CC</div>
-                  <div class="info"><div class="name">Cartão de crédito</div><div class="meta">Fatura de out. em aberto</div></div>
-                  <div class="val">R$ -1.870</div>
+                <div class="accounts-summary">
+                  <div class="card">
+                    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg></div>
+                    <div class="txt"><div class="lbl">Saldo em contas</div><div class="masked">••••••</div></div>
+                  </div>
+                  <div class="card">
+                    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><line x1="2.5" y1="10" x2="21.5" y2="10"/></svg></div>
+                    <div class="txt"><div class="lbl">Dívidas em cartões</div><div class="masked">••••••</div></div>
+                  </div>
+                  <div class="card">
+                    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 6l-9.5 9.5-5-5L1 18"/></svg></div>
+                    <div class="txt"><div class="lbl">Resultado do período</div><div class="masked">••••••</div></div>
+                  </div>
                 </div>
-                <div class="account-row">
-                  <div class="logo" style="background:hsl(var(--chart-3))">CO</div>
-                  <div class="info"><div class="name">Corretora</div><div class="meta">Sincronizada em 15/09 09:02</div></div>
-                  <div class="val">R$ 12.560</div>
-                </div>
-                <div class="account-row">
-                  <div class="logo" style="background:hsl(var(--chart-1))">BB</div>
-                  <div class="info"><div class="name">Banco B · Poupança</div><div class="meta">Cadastro manual</div></div>
-                  <div class="val">R$ 890</div>
-                </div>
-                <div style="margin-top:14px;padding-top:14px;border-top:1px solid hsl(var(--border));display:flex;justify-content:space-between;align-items:center;">
-                  <span style="font-family:var(--font-ui);font-weight:600;font-size:13px;">Patrimônio total</span>
-                  <span style="font-family:var(--font-display);font-weight:700;font-size:19px;color:hsl(var(--primary-emphasis));">R$ 18.420</span>
+                <div class="accounts-section-title">Contas Bancárias (4)</div>
+                <div class="accounts-grid">
+                  <div class="bank-card">
+                    <div class="bank-card-head"><span class="badge" style="background:#820AD1">NU</span><div><div class="name">NU</div><div class="num">Conta corrente ·· 8181-0</div></div></div>
+                    <div class="lbl">Saldo disponível</div>
+                    <div class="masked">•••</div>
+                    <div class="sync">Sincronizada em 15/09 09:06</div>
+                  </div>
+                  <div class="bank-card">
+                    <div class="bank-card-head"><span class="badge" style="background:#0B2942">BTG</span><div><div class="name">BTG Banking</div><div class="num">Conta corrente ·· 7232-4</div></div></div>
+                    <div class="lbl">Saldo disponível</div>
+                    <div class="masked">•••</div>
+                    <div class="sync">Sincronizada em 15/09 09:06</div>
+                  </div>
+                  <div class="bank-card">
+                    <div class="bank-card-head"><span class="badge" style="background:#0A6BB0">CX</span><div><div class="name">CAIXA</div><div class="num">Conta corrente ·· 6916-7</div></div></div>
+                    <div class="lbl">Saldo disponível</div>
+                    <div class="masked">•••</div>
+                    <div class="sync">Sincronizada em 15/09 09:02</div>
+                  </div>
+                  <div class="bank-card">
+                    <div class="bank-card-head"><span class="badge" style="background:#FF7A00">INT</span><div><div class="name">Banco Inter</div><div class="num">Conta corrente ·· 7519-9</div></div></div>
+                    <div class="lbl">Saldo disponível</div>
+                    <div class="masked">•••</div>
+                    <div class="sync">Sincronizada em 15/09 09:09</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,16 +298,20 @@
 
           <div class="narrative-panel" data-panel="p3">
             <div class="frame">
-              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Para onde foi seu dinheiro</span></div>
+              <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Visualização de uso</span></div>
               <div class="frame-body">
-                <div class="donut-wrap">
-                  <div class="donut" data-donut style="background: conic-gradient(hsl(var(--chart-1)) 0% 34%, hsl(var(--chart-3)) 34% 55%, hsl(var(--chart-4)) 55% 72%, hsl(var(--chart-2)) 72% 86%, hsl(var(--chart-8)) 86% 100%);"></div>
-                  <div class="donut-legend">
-                    <div class="item"><span class="swatch" style="background:hsl(var(--chart-1))"></span>Moradia<span class="amt">R$ 2.140</span></div>
-                    <div class="item"><span class="swatch" style="background:hsl(var(--chart-3))"></span>Mercado<span class="amt">R$ 1.320</span></div>
-                    <div class="item"><span class="swatch" style="background:hsl(var(--chart-4))"></span>Transporte<span class="amt">R$ 680</span></div>
-                    <div class="item"><span class="swatch" style="background:hsl(var(--chart-2))"></span>Assinaturas<span class="amt">R$ 440</span></div>
-                    <div class="item"><span class="swatch" style="background:hsl(var(--chart-8))"></span>Outros<span class="amt">R$ 380</span></div>
+                <div class="panel-title">Distribuição do orçamento por categoria</div>
+                <div class="usage-donut-wrap">
+                  <div class="usage-donut" data-donut style="background: conic-gradient(#6C4FC4 0% 25%, #2E77F3 25% 55%, #EF5DA0 55% 70%, #6B1F7A 70% 85%, #F0812A 85% 95%, #F2C230 95% 100%);">
+                    <div class="usage-donut-center"><b>100%</b><span>Total</span></div>
+                  </div>
+                  <div class="usage-legend">
+                    <div class="item"><span class="dot" style="background:#6C4FC4"></span>Liberdade Financeira<b>25%</b></div>
+                    <div class="item"><span class="dot" style="background:#2E77F3"></span>Custos Fixos<b>30%</b></div>
+                    <div class="item"><span class="dot" style="background:#EF5DA0"></span>Conforto<b>15%</b></div>
+                    <div class="item"><span class="dot" style="background:#6B1F7A"></span>Metas<b>15%</b></div>
+                    <div class="item"><span class="dot" style="background:#F0812A"></span>Prazeres<b>10%</b></div>
+                    <div class="item"><span class="dot" style="background:#F2C230"></span>Conhecimento<b>5%</b></div>
                   </div>
                 </div>
               </div>
@@ -768,17 +798,17 @@
       <div class="proof-stat"><div class="num" data-count-to="3" data-suffix=" min">0 min</div><div class="lbl">tempo médio até o primeiro painel completo</div></div>
     </div>
 
-    <div class="section-head center" data-reveal>
-      <h2>De "não sei onde meu dinheiro vai" para "eu vejo tudo".</h2>
-    </div>
   </div>
   </section>
 
   <!-- ============ MURAL DE DEPOIMENTOS (bento) ============ -->
   <section class="section band-dark">
   <div class="container">
+    <div class="section-head center" data-reveal>
+      <h2>De "não sei onde meu dinheiro vai" para "eu vejo tudo".</h2>
+    </div>
     <div class="testi-wall" data-reveal>
-      <div class="testi-card">
+      <div class="testi-card tspan-row">
         <img src="assets/olho-amarelo.svg" alt="" class="testi-badge">
         <div class="stars">★★★★★</div>
         <p class="body">"O novo "Minhas Finanças" tá de fato muito bom, a integração com o MCP foi uma virada de chave. Facilita muito as categorizações, era muito moroso categorizar tudo manualmente todo mês. Agora já deixei o ano todo ajustado. Inclusive estou deixando algumas sugestões de melhorias lá! Ótimo trabalho, parabéns!"</p>
@@ -805,7 +835,7 @@
         <p class="body">"Cadastro minha renda de freelancer na mão e o resto conecta sozinho. Funciona bem pra quem não tem holerite fixo."</p>
         <div class="who"><div class="avatar" style="background:hsl(var(--chart-4))">PH</div><div><div class="name">Pedro Henrique</div><div class="role">Cliente Minhas Finanças</div></div></div>
       </div>
-      <div class="testi-card">
+      <div class="testi-card tspan-col">
         <img src="assets/olho-amarelo.svg" alt="" class="testi-badge">
         <div class="stars">★★★★★</div>
         <div class="headline">Categorização impressionantemente certeira</div>
@@ -833,14 +863,19 @@
       </div>
       <div class="cta-visual">
         <div class="frame">
-          <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Para onde foi seu dinheiro</span></div>
+          <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="frame-title">Visualização de uso</span></div>
           <div class="frame-body">
-            <div class="donut-wrap">
-              <div class="donut grown" style="background: conic-gradient(hsl(var(--chart-1)) 0% 34%, hsl(var(--chart-3)) 34% 55%, hsl(var(--chart-4)) 55% 72%, hsl(var(--chart-2)) 72% 86%, hsl(var(--chart-8)) 86% 100%);"></div>
-              <div class="donut-legend">
-                <div class="item"><span class="swatch" style="background:hsl(var(--chart-1))"></span>Moradia<span class="amt">R$ 2.140</span></div>
-                <div class="item"><span class="swatch" style="background:hsl(var(--chart-3))"></span>Mercado<span class="amt">R$ 1.320</span></div>
-                <div class="item"><span class="swatch" style="background:hsl(var(--chart-4))"></span>Transporte<span class="amt">R$ 680</span></div>
+            <div class="usage-donut-wrap">
+              <div class="usage-donut grown" style="background: conic-gradient(#6C4FC4 0% 25%, #2E77F3 25% 55%, #EF5DA0 55% 70%, #6B1F7A 70% 85%, #F0812A 85% 95%, #F2C230 95% 100%);">
+                <div class="usage-donut-center"><b>100%</b><span>Total</span></div>
+              </div>
+              <div class="usage-legend">
+                <div class="item"><span class="dot" style="background:#6C4FC4"></span>Liberdade Financeira<b>25%</b></div>
+                <div class="item"><span class="dot" style="background:#2E77F3"></span>Custos Fixos<b>30%</b></div>
+                <div class="item"><span class="dot" style="background:#EF5DA0"></span>Conforto<b>15%</b></div>
+                <div class="item"><span class="dot" style="background:#6B1F7A"></span>Metas<b>15%</b></div>
+                <div class="item"><span class="dot" style="background:#F0812A"></span>Prazeres<b>10%</b></div>
+                <div class="item"><span class="dot" style="background:#F2C230"></span>Conhecimento<b>5%</b></div>
               </div>
             </div>
           </div>

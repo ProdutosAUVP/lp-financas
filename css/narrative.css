@@ -69,8 +69,8 @@
 
 @media (max-width: 900px) {
   .narrative-scroll { grid-template-columns: 1fr; gap: 28px; }
-  .narrative-sticky { position: sticky; top: max(84px, calc(50vh - 200px)); }
-  .narrative-visual { height: 400px; }
+  .narrative-sticky { position: sticky; top: max(84px, calc(50vh - 220px)); }
+  .narrative-visual { height: 440px; }
   .narrative-item { padding-block: 7vh; }
   .narrative-item:first-child { padding-top: 0; }
 }
